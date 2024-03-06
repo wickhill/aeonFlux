@@ -1,0 +1,33 @@
+<head>
+    <%- include('./partials/head.ejs', {title: `Edit ${citizen.name} | Citizen Locator`}) %>
+    <link rel="stylesheet" href="/css/forms.css">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <section class="hero">
+        <h2>File a Report</h2>
+    </section>
+
+    <form method="POST" action="/citizens/<%= citizen._id %>?_method=PUT">
+        <!-- Name input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= citizen.name %>" required>
+        <br>
+        <!-- Color input -->
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" value="<%= citizen.color %>" required>
+        <br>
+        <!-- Requires Investigation input -->
+        <label for="requiresInvestigation">Requires Investigation</label>
+    <!-- This line dynamically sets the checked attribute. If citizen.requiresInvestigation evaluates to true,  -->
+         <input type="checkbox" name="requiresInvestigation" id="requiresInvestigation" <%= citizen.requiresInvestigation ? 'checked' : '' %> >
+        <!-- the checked attribute will be included in the rendered HTML, making the checkbox appear as filled. I
+        if citizen.requiresInvestigation is false or undefined, the attribute will not be included, and the checkbox will be unchecked. --> 
+       
+        <input type="submit" value="Edit Report">
+    </form>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
