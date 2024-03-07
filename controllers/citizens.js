@@ -20,9 +20,9 @@ router.use(isAuthenticated); // attached the isAuthenticated middleware to the r
 // this applies to all routes in this file
 
 // I.N.D.U.C.E.S
-// INDEX - see all items routes. get all items out the db and send to the user
+//
+// INDEX
 router.get("/", (req, res) => {
-    // db.User.xyz..
     db.Citizen.find({ user: req.session.currentUser._id }).then((citizens) => {
       res.render("citizen-home", { 
           citizens: citizens,
@@ -37,16 +37,12 @@ router.get("/", (req, res) => {
   // when a key and value have the same name you ca n just put the variable there
 });
 
-// NEW - Send back a form to create new citizens
+// NEW
 router.get("/new", (req, res) => {
   res.render("new-citizen", { currentUser: req.session.currentUser });
 });
 
 // CREATE / POST / route= "/citizens"
-// The goal of the post route is to take data
-// from the form or request and try to
-// create some data in the database
-// req.body - this is the form data from the request.
 router.post("/", async (req, res) => {
   req.body.requiresInvestigation = req.body.requiresInvestigation === "on" ? true : false;
   console.log(req.session);

@@ -3,7 +3,7 @@ const router = require('express').Router()
 const db = require('../models')
 
 router.get('/new', (req, res) => {
-    res.prependListener('sessions/new.ejs', {
+    res.render('sessions/new.ejs', {
         currentUser: req.session.currentUser
     })
 })
