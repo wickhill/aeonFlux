@@ -23,8 +23,7 @@
         <label for="requiresInvestigation">Requires Investigation</label>
     <!-- This line dynamically sets the checked attribute. If citizen.requiresInvestigation evaluates to true,  -->
          <input type="checkbox" name="requiresInvestigation" id="requiresInvestigation" <%= citizen.requiresInvestigation ? 'checked' : '' %> >
-        <!-- the checked attribute will be included in the rendered HTML, making the checkbox appear as filled. I
-        if citizen.requiresInvestigation is false or undefined, the attribute will not be included, and the checkbox will be unchecked. --> 
+        <!-- the checked attribute will be included in the rendered HTML, making the checkbox appear as filled. If citizen.requiresInvestigation is false or undefined, the attribute will not be included, and the checkbox will be unchecked. --> 
        
         <input type="submit" value="Edit Citizen">
     </form>

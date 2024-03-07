@@ -9,8 +9,9 @@ const citizenSchema = new mongoose.Schema({
     skills: [String],
     gender: String,
     missions_completed: { type: Number, default: 0 },
-    charged: { type: String, default: "disloyalty" },
-    img: { type: String, default: "defaultImgPath.jpg" }
+    charges: { type: String, default: "disloyalty" },
+    img: { type: String, default: "defaultImgPath.jpg" },
+    requiresInvestigation: { type: Boolean, default: true }
 
   });
 
