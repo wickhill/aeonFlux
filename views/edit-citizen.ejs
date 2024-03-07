@@ -1,5 +1,5 @@
 <head>
-    <%- include('./partials/head.ejs', {title: `Edit ${citizen.name} | Citizen Locator`}) %>
+    <%- include('./partials/head.ejs', {title: `Edit ${citizen.name} | Citizen Finder`}) %>
     <link rel="stylesheet" href="/css/forms.css">
 </head>
 
@@ -7,7 +7,7 @@
     <%- include('./partials/nav.ejs') %>
 
     <section class="hero">
-        <h2>File a Report</h2>
+        <h2>Edit Citizen Report</h2>
     </section>
 
     <form method="POST" action="/citizens/<%= citizen._id %>?_method=PUT">
@@ -26,7 +26,7 @@
         <!-- the checked attribute will be included in the rendered HTML, making the checkbox appear as filled. I
         if citizen.requiresInvestigation is false or undefined, the attribute will not be included, and the checkbox will be unchecked. --> 
        
-        <input type="submit" value="Edit Report">
+        <input type="submit" value="Edit Citizen">
     </form>
 
     <%- include('./partials/footer.ejs') %>

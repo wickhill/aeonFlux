@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <%- include('./partials/head.ejs', {title: 'Show Page'}) %>
+    </head>
+    
+</head>
+<body>
+    <nav>
+        <%- include('./partials/nav.ejs') %>
+      </nav>
+    <h1>Citizens Show Page</h1>
+    <p>
+    <% if(citizen){ %>
+
+      The Citizens name is <%= citizen.name %> and its nationality is <%= citizen.nationality %> 
+
+        <% if(citizen.requiresInvestigation === true) { %>
+            <span>Requires Investigation</span>
+        <% } else { %>
+            <span>Investigation Not Necessary</span>
+            <% }%>
+            
+    <% }else { %>
+        
+        <h1>Citizen at that index does not exist</h1>
+
+    <% } %>
+</p>
+<div class="showPageContainer">
+    <a href="/citizens/<%= citizen._id %>/edit">Provide Information regarding this Citizen</a>
+    <a href="/">Home</a>
+</div>
+
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

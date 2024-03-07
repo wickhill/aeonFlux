@@ -1,12 +1,12 @@
 // I.N.D.U.C.E.S
 //
-// Index   /bookmarks             GET
-// New     /bookmarks/new         GET
-// Delete  /bookmarks/:id         DELETE
-// Update  /bookmarks/:id         PUT/PATCH
-// Create  /bookmarks             POST
-// Edit    /bookmarks/:id/edit    GET
-// Show    /bookmarks/:id         GET
+// Index   /citizens             GET
+// New     /citizens/new         GET
+// Delete  /citizens/:id         DELETE
+// Update  /citizens/:id         PUT/PATCH
+// Create  /citizens             POST
+// Edit    /citizens/:id/edit    GET
+// Show    /citizens/:id         GET
 
 
 /* modules
