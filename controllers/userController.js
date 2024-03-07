@@ -4,7 +4,7 @@ const db = require('../models')
 const bcrypt = require('bcrypt');
 
 router.get('/new', (req, res) => {
-    res.render('users/newUser', {currentUser: req.session.currentUser})
+    res.render('users/newCitizen', {currentUser: req.session.currentUser})
 })
 router.post('/', async (req, res) => {
     req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(4))
