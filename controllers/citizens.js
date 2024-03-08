@@ -33,8 +33,8 @@ router.get("/", (req, res) => {
   // to send ejs we use
   // ------- res.render(view, {data})
   // - view represents an ejs page, will check for this file name in the views folder
-  // noramally in an object {keßy: value}
-  // when a key and value have the same name you ca n just put the variable there
+  // noramally in an object {key: value}
+  // when a key and value have the same name you can just put the variable there
 });
 
 // NEW

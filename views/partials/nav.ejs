@@ -1,14 +1,21 @@
 <header>
-    <h1>Citizen Locator</h1>
+    <h1>Citizen Report Kiosk</h1>
     <nav>
       <ul>
         <!-- <li><a href="/">Home</a></li> -->
         <li><a href="/">Kiosk Home</a></li>
+        <br>
         <li><a href="/about">The Dream to Awaken Our World</a></li>
+        <br>
         <% if(currentUser){ %>
           <li>Welcome, <span style="font-size: 18px;"><%= currentUser.username.toLowerCase() %></span>.&nbsp;<a href="/session/reports">View Your Reports?</a></li>
 
+        <br>
+        <li><a href="/characters/">View all Citizens on Database</a></li>
+
+        <br>
         <li><a href="/citizens/new">Create a New Citizen Report</a></li>
+        <br>
         <li>
           <form action="/sessions/?_method=DELETE" method="POST">
             <input type="submit" value="Logout" />
@@ -16,8 +23,8 @@
         </li>
   
         <% } else { %>
-              <li><a href="/users/new">Sign Up</a></li>
-              <li><a href="/session/new">Sign In</a></li>
+              <li><a href="/users/new">Kiosk Sign Up</a></li>
+              <li><a href="/session/new">Kiosk Sign In</a></li>
   
         <% } %>
         <!-- <li><a href="/applications">My Applications</a></li> -->
