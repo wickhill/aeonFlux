@@ -33,6 +33,8 @@ const citizensCtrl = require('./controllers/citizens')
 const userCtrl = require('./controllers/userController')
 const sessionCtrl = require('./controllers/sessionController')
 
+const citizens = require('./models/seed');
+
 
 /* express app
 --------------------------------------------------------------- */
@@ -99,7 +101,8 @@ app.get('/seed', function (req, res) {
 });
 // render the about us page
 app.get('/about', function (req, res) {
-    res.render('about')
+    const trevor = citizens.find(citizen => citizen.name === 'trevor goodchild');
+    res.render('about', { citizen: trevor });
 });
 
 

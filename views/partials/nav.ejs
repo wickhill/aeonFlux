@@ -6,7 +6,8 @@
         <li><a href="/">Kiosk Home</a></li>
         <li><a href="/about">The Dream to Awaken Our World</a></li>
         <% if(currentUser){ %>
-        <li>Welcome <%= currentUser.username %></li>
+          <li>Welcome, <span style="font-size: 18px;"><%= currentUser.username.toLowerCase() %></span>.&nbsp;<a href="/session/reports">View Your Reports?</a></li>
+
         <li><a href="/citizens/new">Create a New Citizen Report</a></li>
         <li>
           <form action="/sessions/?_method=DELETE" method="POST">

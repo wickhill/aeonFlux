@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
 <head>
     <%- include('./partials/head.ejs', {title: `About Chairman Goodchild's Dream for a Harmonious Bregna`}) %>
-    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        #trevor-image {
+            width: 400px !important;
+            height: 400px !important;
+            border: 5px solid rgb(231, 193, 96) !important;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -15,6 +26,7 @@
         <section class="chairman">
             <h1>About Chairmain Goodchild:</h1>
             <h4><i>Leading Bregna To New Horizons Since 7017</i></h4>
+            <img src="<%= citizen.img %>" alt="pic of <%= citizen.name %>" id="trevor-image">
         </section>
     </main>
 

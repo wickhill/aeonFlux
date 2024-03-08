@@ -11,7 +11,7 @@ const citizenSchema = new mongoose.Schema({
     missions_completed: { type: Number, default: 0 },
     charges: { type: String, default: "disloyalty" },
     img: { type: String, default: "defaultImgPath.jpg" },
-    requiresInvestigation: { type: Boolean, default: true }
+    requiresInvestigation: { type: Boolean }
 
   });
 
