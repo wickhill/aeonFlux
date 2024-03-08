@@ -1,38 +1,25 @@
 const citizens = [
-    {
-        name: 'number 16',
-        nationality: 'bregna',
-        is_spy: true,
-        requiresInvestigation: false,
-        img: "https://i.imgur.com/M7MNsjT.jpg",
-    },
-    {
-        name: 'scaphandra',
-        nationality: 'unknown',
-        is_spy: true,
-        requiresInvestigation: true,
-        img: "https://i.imgur.com/KiyeUEG.jpg",
-    },
-    {
-        name: 'ilbren',
-        nationality: 'bregna',
-        is_spy: false,
-        requiresInvestigation: true,
-        img: "https://i.imgur.com/ZoW2Rd1.jpg",
-    },
-    {
-        name: 'rordy',
-        nationality: 'bregna',
-        is_spy: false,
-        requiresInvestigation: false,
-        img: "https://i.imgur.com/EFDxTEq.jpg",
-    },
+
     {
         name: 'aeon flux',
         nationality: 'monica',
         is_spy: true,
         requiresInvestigation: true,
         img: "https://i.imgur.com/zNFfivd.jpg",
+    },
+    {
+        name: 'trevor goodchild',
+        nationality: 'bregna',
+        is_spy: false,
+        requiresInvestigation: false,
+        img: "https://i.imgur.com/r7lZyIO.jpg",
+    },
+    {
+        name: 'una',
+        nationality: 'bregna',
+        is_spy: false,
+        requiresInvestigation: true,
+        img: "https://i.imgur.com/HmsC3Nd.jpg",
     },
     {
         name: 'gildemere',
@@ -56,18 +43,32 @@ const citizens = [
         img: "https://i.imgur.com/u3NyhmN.jpg",
     },
     {
-        name: 'trevor goodchild',
+        name: 'rordy',
         nationality: 'bregna',
         is_spy: false,
         requiresInvestigation: false,
-        img: "https://i.imgur.com/r7lZyIO.jpg",
+        img: "https://i.imgur.com/EFDxTEq.jpg",
     },
     {
-        name: 'una',
+        name: 'scaphandra',
+        nationality: 'unknown',
+        is_spy: true,
+        requiresInvestigation: true,
+        img: "https://i.imgur.com/KiyeUEG.jpg",
+    },
+    {
+        name: 'ilbren',
         nationality: 'bregna',
         is_spy: false,
         requiresInvestigation: true,
-        img: "https://i.imgur.com/HmsC3Nd.jpg",
+        img: "https://i.imgur.com/ZoW2Rd1.jpg",
+    },
+    {
+        name: 'number 16',
+        nationality: 'bregna',
+        is_spy: true,
+        requiresInvestigation: false,
+        img: "https://i.imgur.com/M7MNsjT.jpg",
     },
     
 ]
