@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Characters</title>
+    <title>Citizen Dossiers</title>
 </head>
 <body>
-    <h1>Characters</h1>
+    <h1>Citizen Dossiers</h1>
     <ul>
-        <% characters.forEach(function(character) { %>
+        <% citizens.forEach(function(citizen) { %>
             <li>
-                <img src="<%= character.img %>" alt="<%= character.name %>">
-                <p><%= character.name %></p>
+                <img src="<%= citizen.img %>" alt="<%= citizen.name %>">
+                <p><%= citizen.name %></p>
                 <!-- Add more character details as needed -->
             </li>
         <% }) %>
