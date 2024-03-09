@@ -11,6 +11,7 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: baseline;
+            list-style-type: none;
             gap: 10px 30px;
         }
 
@@ -23,6 +24,7 @@
 </head>
 <body>
     <h1>Citizen Dossiers</h1>
+    <h4><a href="/">Kiosk Homepage</a></h4>
     <ul class="dossier-list">
         <% citizens.forEach(function(citizen) { %>
             <li>
@@ -34,5 +36,6 @@
             </li>
         <% }) %>
     </ul>
+    <h4><a href="/">Kiosk Homepage</a></h4>
 </body>
 </html>
