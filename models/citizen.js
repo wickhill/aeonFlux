@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 
 const citizenSchema = new mongoose.Schema({
     name: {type: String, required: true},
-    nationality: { type: String, default: "bregna"},
+    nationality: { type: String, default: "please-indicate-nationality"},
     is_spy: {type: Boolean},
-    hairColor: { type: String, default: "black" },
-    eyeColor: { type: String, default: "blue" },
+    hairColor: String,
+    eyeColor: String,
     skills: [String],
     gender: String,
     missions_completed: { type: Number, default: 0 },
