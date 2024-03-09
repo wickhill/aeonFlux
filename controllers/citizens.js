@@ -45,6 +45,7 @@ router.get("/new", (req, res) => {
 // CREATE / POST / route= "/citizens"
 router.post("/", async (req, res) => {
   req.body.requiresInvestigation = req.body.requiresInvestigation === "on" ? true : false;
+  req.body.is_spy = req.body.is_spy === "true";
   console.log(req.session);
   req.body.user = req.session.currentUser._id;
   await db.Citizen.create(req.body).then((citizen) =>
