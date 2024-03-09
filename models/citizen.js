@@ -7,10 +7,10 @@ const citizenSchema = new mongoose.Schema({
     hairColor: String,
     eyeColor: String,
     skills: [String],
-    gender: String,
-    missions_completed: { type: Number, default: 0 },
+    missions_completed: { type: String, default: "0" },
     charges: { type: String, default: "disloyalty" },
-    img: { type: String, default: "defaultImgPath.jpg" },
+    testimonial: { type: String, default: "unverified-testimonial" },
+    citizenProfileImage: { type: String, default: "defaultImgPath.jpg" },
     requiresInvestigation: { type: Boolean }
 
   });

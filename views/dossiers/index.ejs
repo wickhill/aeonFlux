@@ -28,7 +28,7 @@
     <ul class="dossier-list">
         <% citizens.forEach(function(citizen) { %>
             <li>
-                <img src="<%= citizen.img %>" alt="<%= citizen.name %>" class="dossier-image">
+                <img src="<%= citizen.citizenProfileImage %>" alt="Profile image of <%= citizen.name %>" class="dossier-image" onerror="this.onerror=null; this.src='/path/to/default/image.jpg';">
                 <p>name: <%= citizen.name %></p>
                 <p>nationality: <%= citizen.nationality %></p>
                 <p>confirmed spy: <%= citizen.is_spy %></p>
