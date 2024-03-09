@@ -31,6 +31,8 @@
                 <img src="<%= citizen.citizenProfileImage %>" alt="Profile image of <%= citizen.name %>" class="dossier-image" onerror="this.onerror=null; this.src='/path/to/default/image.jpg';">
                 <p>name: <%= citizen.name %></p>
                 <p>nationality: <%= citizen.nationality %></p>
+                <p>skills: <%= citizen.skills%></p>
+                <p>charges: <%= citizen.charges%></p>
                 <p>confirmed spy: <%= citizen.is_spy %></p>
                 <p>requires investigation: <%= citizen.requiresInvestigation %></p>
             </li>
