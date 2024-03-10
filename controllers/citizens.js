@@ -43,15 +43,33 @@ router.get("/new", (req, res) => {
 });
 
 // CREATE / POST / route= "/citizens"
+// router.post("/", async (req, res) => {
+//   req.body.requiresInvestigation = req.body.requiresInvestigation === "on" ? true : false;
+//   req.body.is_spy = req.body.is_spy === "true";
+//   console.log(req.session);
+//   req.body.user = req.session.currentUser._id;
+//   await db.Citizen.create(req.body).then((citizen) =>
+//     res.redirect("/citizens/" + citizen._id)
+//   );
+// });
+
+
 router.post("/", async (req, res) => {
   req.body.requiresInvestigation = req.body.requiresInvestigation === "on" ? true : false;
   req.body.is_spy = req.body.is_spy === "true";
   console.log(req.session);
-  req.body.user = req.session.currentUser._id;
-  await db.Citizen.create(req.body).then((citizen) =>
-    res.redirect("/citizens/" + citizen._id)
-  );
+  req.body.createdBy = req.session.currentUser._id;
+
+  const newCitizen = new db.Citizen(req.body);
+
+  try {
+    const savedCitizen = await newCitizen.save();
+    res.redirect("/citizens/" + savedCitizen._id);
+  } catch (error) {
+    console.error(error);
+  }
 });
+
 
 // Show Route (GET/Read): Will display an individual citizen document
 // using the URL parameter (which is the document _id)

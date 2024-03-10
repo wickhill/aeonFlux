@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
         <%- include('./partials/head.ejs', {title: 'Show Page'}) %>
-    </head>
-    
+    <style>
+        .report-image {
+            width: 400px;
+            height: 400px;
+            border: 5px solid rgb(231, 193, 96);
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -17,12 +21,29 @@
     <p>
     <% if(citizen){ %>
 
-      Your report on <span style="font-size: 18px;"><%= citizen.name.toUpperCase() %></span> related to the charge of <span style="font-size: 18px;"><%= citizen.charges.toUpperCase() %></span> has been successful. Thank you for doing your part <span style="font-size: 18px;"> Citizen <%= currentUser._id.toUpperCase() %></span>.
+      Your report on <span style="font-size: 18px;"><%= citizen.name.toUpperCase() %></span> related to the charge of <span style="font-size: 18px;"><%= citizen.charges.toUpperCase() %></span> has been successful.
+      
+      <br>
+      <br>
+      
+      Thank you for doing your part: <span style="font-size: 18px;"> <i>Citizen <%= currentUser._id.toUpperCase() %></i></span>.
+
+      <br>
+      <br>
+
+      <span>
+
+        <img class="report-image" src=" <%= citizen.citizenProfileImage %> " alt="">
+
+      </span>
+        
+      <br>
+      <br>
 
         <% if(citizen.requiresInvestigation === true) { %>
             <span>Investigation will commence in due time.</span>
         <% } else { %>
-            <span>Investigation not necessary at this time.</span>
+            <span>Further Investigation not necessary at this time.</span>
             <% }%>
             
     <% }else { %>
@@ -31,12 +52,16 @@
 
     <% } %>
 </p>
-<div class="showPageContainer">
-    <a href="/citizens/<%= citizen._id %>/edit">Provide Information regarding this Citizen</a>
-    <a href="/">Home</a>
+<div>
+
+    <a href="/citizens/<%= citizen._id %>/edit">Provide Additional Information regarding this Citizen</a>
+    
 </div>
 
 
     <%- include('./partials/footer.ejs') %>
+
+
+    <a href="/">Kiosk Home</a>
 </body>
 </html>

@@ -13,6 +13,11 @@ const citizenSchema = new mongoose.Schema({
     requiresInvestigation: { type: Boolean },
     citizenProfileImage: { type: String, default: "defaultImgPath.jpg" },
 
+    createdBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User'
+    }
+
   });
 
 
