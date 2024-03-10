@@ -71,8 +71,8 @@ router.post("/", async (req, res) => {
 });
 
 
-// Show Route (GET/Read): Will display an individual citizen document
-// using the URL parameter (which is the document _id)
+// SHOW Route for displaying a single citizen:
+//
 router.get("/:id", function (req, res) {
   db.Citizen.findById(req.params.id)
     .then((citizen) => {
@@ -83,6 +83,7 @@ router.get("/:id", function (req, res) {
     })
     .catch(() => res.render("404"));
 });
+
 
 // Edit Route (GET/Read): This route renders a form
 // the user will use to PUT (edit) properties of an existing citizen
