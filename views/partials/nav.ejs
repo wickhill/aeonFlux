@@ -1,14 +1,29 @@
 <header>
-    <h1>Citizen Report Kiosk</h1>
+    <h1>Citizen Protection Kiosk</h1>
     <nav>
-      <ul>
+      <style>
+
+        .kiosk-list {
+          list-style-type: square;
+          font-size: 18px;
+        }
+
+      </style>
+      <ul class="kiosk-list">
         <!-- <li><a href="/">Home</a></li> -->
+        <ul>
         <li><a href="/">Kiosk Home</a></li>
         <br>
-        <li><a href="/about">The Dream to Awaken Our World</a></li>
-        <br>
         <% if(currentUser){ %>
-          <li>Welcome, <span style="font-size: 18px;"><%= currentUser.username.toLowerCase() %></span>.&nbsp;<a href="/session/reports">View Your Reports?</a></li>
+          <li>Welcome, <span style="font-size: 19px;"><%= currentUser.username.toLowerCase() %></span>.&nbsp;<a href="/session/reports"> </li>
+
+            <br>
+            <li><a href="/about">Learn about the Dream to Awaken Our World</a></li>
+        
+              
+        <br>
+
+        <li>View Your Reports?</a></li>
 
         <br>
         <li><a href="/dossiers/">View all Citizens in Database</a></li>
@@ -21,6 +36,7 @@
             <input type="submit" value="Logout" />
           </form>
         </li>
+      </ul>
   
         <% } else { %>
               <li><a href="/users/new">Kiosk Sign Up</a></li>

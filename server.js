@@ -33,6 +33,7 @@ const citizensCtrl = require('./controllers/citizens')
 const userCtrl = require('./controllers/userController')
 const sessionCtrl = require('./controllers/sessionController')
 const dossierCtrl = require('./controllers/dossierController')
+const reportsController = require('./controllers/reportsController');
 
 const citizens = require('./models/seed');
 
@@ -114,6 +115,7 @@ app.use('/citizens', citizensCtrl)
 app.use('/users', userCtrl)
 app.use('/sessions', sessionCtrl)
 app.use('/dossiers', dossierCtrl)
+app.use('/reports', reportsController);
 
 
 /* 'catch-all' route, i.e. report to supervisor lol

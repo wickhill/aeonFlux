@@ -10,19 +10,19 @@
     <nav>
 
         <!-- REMEMBER TO ALTER THE TAGS BELOW WHEN YOU WANT TO USE THEM!!  -->
-        <%# include('./partials/nav.ejs') %>
+        <%- include('./partials/nav.ejs') %>
     
     </nav>
     <h1>Citizens Show Page</h1>
     <p>
     <% if(citizen){ %>
 
-      The Citizen's name is <%= citizen.name %> and their nationality is <%= citizen.nationality %> 
+      Your report on <span style="font-size: 18px;"><%= citizen.name.toUpperCase() %></span> related to the charge of <span style="font-size: 18px;"><%= citizen.charges.toUpperCase() %></span> has been successful. Thank you for doing your part <span style="font-size: 18px;"> Citizen <%= currentUser._id.toUpperCase() %></span>.
 
         <% if(citizen.requiresInvestigation === true) { %>
-            <span>Requires Investigation</span>
+            <span>Investigation will commence in due time.</span>
         <% } else { %>
-            <span>Investigation Not Necessary</span>
+            <span>Investigation not necessary at this time.</span>
             <% }%>
             
     <% }else { %>
