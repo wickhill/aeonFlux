@@ -76,11 +76,27 @@ router.get("/:id/edit", (req, res) => {
 
 // Update:
 router.put("/:id", async (req, res) => {
-  req.body.requiresInvestigation = req.body.requiresInvestigation === "on" ? true : false;
-  await db.Citizen.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(
-    (citizen) => res.redirect("/citizens/" + citizen._id)
-  );
+  if (req.body.requiresInvestigation === "on") {
+      req.body.requiresInvestigation = true;
+  } else {
+      req.body.requiresInvestigation = false;
+  }
+
+  // Very cool bit of code, which prevents a 'blank' URL value from erasing an existing value and (therefore) image!
+  const updateObject = { ...req.body };
+  if (!req.body.citizenProfileImage || req.body.citizenProfileImage.trim() === "") {
+      delete updateObject.citizenProfileImage;
+  }
+
+  try {
+      await db.Citizen.findByIdAndUpdate(req.params.id, updateObject, { new: true });
+      res.redirect("/citizens/" + req.params.id);
+  } catch (error) {
+      console.error(error);
+      res.status(500).send('Error updating citizen.');
+  }
 });
+
 
 // Delete:
 router.delete("/:id", async (req, res) => {

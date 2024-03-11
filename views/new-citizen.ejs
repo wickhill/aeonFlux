@@ -7,40 +7,51 @@
 <body>
     <h1>Create New Citizen Report</h1>
     <form action="/citizens/" method="post">
+
+        <!-- Name input -->
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" placeholder="Enter citizen's name"/>
+
+        <!-- Nationality input -->
         <label for="nationality">Nationality:</label>
         <input type="text" name="nationality" id="nationality" placeholder="Enter their nationality"/>
 
         <br>
-
+        
+        <!-- Confirmed Spy input -->
         <label for="is_spy">Confirmed Spy?:</label> 
         <select name="is_spy" id="is_spy">
             <option value="true">true</option>
             <option value="false">false</option>
         </select>
 
+        <!-- Hair Color input -->
         <label for="hairColor">Hair Color:</label> 
         <input type="text" name="hairColor" id="hairColor" placeholder="Enter hair color"/>
 
+        <!-- Eye Color input -->
         <label for="eyeColor">Eye Color:</label> 
         <input type="text" name="eyeColor" id="eyeColor" placeholder="Enter eye color"/>
 
         <br>
 
+        <!-- Charges Against input -->
         <label for="charges">Charges:</label> 
         <input type="text" name="charges" id="charges" placeholder="Enter claims against citizen"/>
 
+        <!-- Testimonial For input -->
         <label for="testimonial">Testimonial:</label> 
         <input type="text" name="testimonial" id="testimonial" placeholder="Enter unverified testimony in favor of citizen"/>
 
         <br>
 
+        <!-- citizenProfileImage input -->
         <label for="citizenProfileImage">Evidence Image URL:</label>
         <input type="url" name="citizenProfileImage" id="citizenProfileImage" placeholder="Enter image URL" />
 
         <br>
         
+        <!-- requiresInvestigation input -->
         <label for="requiresInvestigation">Requires Investigation?</label>
         <input type="checkbox" name="requiresInvestigation" id="requiresInvestigation" value="on"/>
         <input type="submit" value="Create Citizen Report"/>

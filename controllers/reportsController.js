@@ -23,7 +23,7 @@ router.get('/:id/edit', async (req, res) => {
         if (!citizen) {
             return res.status(404).send('Report not on database. Contact Supervisor');
         }
-        res.render('edit-citizen', { 
+        res.render('./reports/edit.ejs', { 
             citizen: citizen,
             currentUser: req.session.currentUser
         });
@@ -35,11 +35,12 @@ router.get('/:id/edit', async (req, res) => {
   
 // UPDATE
 
-//   router.put("/:id", async (req, res) => {
+// router.put("/:id", async (req, res) => {
 //     req.body.requiresInvestigation = req.body.requiresInvestigation === "on" ? true : false;
 //     await db.Citizen.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(
 //       (citizen) => res.redirect("/citizens/" + citizen._id)
 //     );
 //   });
+
 
 module.exports = router;
