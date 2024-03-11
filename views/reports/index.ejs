@@ -35,6 +35,10 @@
                 <p>charges: <%= citizen.charges%></p>
                 <p>confirmed spy: <%= citizen.is_spy %></p>
                 <p>requires investigation: <%= citizen.requiresInvestigation %></p>
+                <form action="/reports/<%= citizen._id %>/edit" method="GET">
+                    <input type="submit" value="Edit Citizen Report" />
+                </form>
+                
             </li>
         <% }) %>
     </ul>
