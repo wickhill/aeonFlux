@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1>Citizen Dossiers</h1>
-    <h4><a href="/">Kiosk Homepage</a></h4>
+    <h1 class="kiosk-computer-font-01">Citizen Dossiers</h1>
+    <h4 class="kiosk-computer-font-01"><a href="/">Kiosk Homepage</a></h4>
     <ul class="dossier-list">
         <% citizens.forEach(function(citizen) { %>
-            <li>
+            <li class="kiosk-computer-font-04">
                 <img src="<%= citizen.citizenProfileImage %>" alt="Profile image of <%= citizen.name %>" class="dossier-image" onerror="this.onerror=null; this.src='/path/to/default/image.jpg';">
                 <p>name: <%= citizen.name %></p>
                 <p>nationality: <%= citizen.nationality %></p>

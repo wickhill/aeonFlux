@@ -1,49 +1,26 @@
 <header>
-    <h1>Citizen Protection Kiosk</h1>
-    <nav>
-      <style>
-
-        .kiosk-list {
-          list-style-type: square;
-          font-size: 18px;
-        }
-
-      </style>
-      <ul class="kiosk-list">
-        <!-- <li><a href="/">Home</a></li> -->
-        <ul>
-        <li><a href="/">Kiosk Home</a></li>
-        <br>
-        <% if(currentUser){ %>
-          <li>Welcome, <span style="font-size: 19px;"><%= currentUser.username.toLowerCase() %></span>.&nbsp;<a href="/session/reports"> </li>
-
-            <br>
-            <li><a href="/about">Learn about the Dream to Awaken Our World</a></li>
-        
-              
-        <br>
-
-        <li><a href="/reports/">View Your Reports?</a></li>
-
-        <br>
-        <li><a href="/dossiers/">View all Citizens in Database</a></li>
-
-        <br>
-        <li><a href="/citizens/new">Create a New Citizen Report</a></li>
-        <br>
-        <li>
-          <form action="/sessions/?_method=DELETE" method="POST">
-            <input type="submit" value="Logout" />
-          </form>
+  <link rel="stylesheet" href="/css/style.css">
+  <h1 class="kiosk-computer-font-02">Citizen Awareness Kiosk</h1>
+  <nav class="kiosk-computer-font-01">
+    <ul class="kiosk-list-bullet-pts">
+      <% if (currentUser) { %>
+        <li>Welcome, <span style="font-size: 25px;"><%= currentUser.username.toLowerCase() %></span>
+          <div>
+            <li class="kiosk-list-spacing"><a href="/about">Learn about the Dream to Awaken Our World</a></li>
+            <li class="kiosk-list-spacing"><a href="/reports/">View Your Reports?</a></li>
+            <li class="kiosk-list-spacing"><a href="/dossiers/">View all Citizens in Database</a></li>
+            <li class="kiosk-list-spacing"><a href="/citizens/new">Create a New Citizen Report</a></li>
+            <li class="kiosk-list-spacing">
+              <form action="/sessions/?_method=DELETE" method="POST">
+                <input type="submit" value="Logout" />
+              </form>
+            </li>
+          </div>
         </li>
-      </ul>
-  
-        <% } else { %>
-              <li><a href="/users/new">Kiosk Sign Up</a></li>
-              <li><a href="/session/new">Kiosk Sign In</a></li>
-  
-        <% } %>
-        <!-- <li><a href="/applications">My Applications</a></li> -->
-      </ul>
-    </nav>
-  </header>
+      <% } else { %>
+        <li><a href="/users/new">Kiosk Sign Up</a></li>
+        <li><a href="/session/new">Kiosk Sign In</a></li>
+      <% } %>
+    </ul>
+  </nav>
+</header>
