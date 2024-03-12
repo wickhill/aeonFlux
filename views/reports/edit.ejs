@@ -1,6 +1,6 @@
 <head>
     <%- include('../partials/head.ejs', {title: `Edit ${citizen.name} | Citizen Finder`}) %>
-    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="../css/forms.css">
 
     <style>
         .report-image {
@@ -75,8 +75,6 @@
     
         <br>
             
-
-
         <!-- Requires Investigation input -->
         <label for="requiresInvestigation">Requires Investigation</label>
          <input type="checkbox" name="requiresInvestigation" id="requiresInvestigation" <%= citizen.requiresInvestigation ? 'checked' : '' %> >

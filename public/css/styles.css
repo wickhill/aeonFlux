@@ -1,0 +1,43 @@
+#trevor-and-clavius-image {
+    width: 800px !important;
+    height: 600px !important;
+    border: 5px solid rgb(231, 193, 96) !important;
+}
+
+.dossier-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    list-style-type: none;
+    gap: 10px 30px;
+}
+
+.dossier-image {
+    width: 400px;
+    height: 400px;
+    border: 5px solid rgb(231, 193, 96);
+}
+
+.report-image {
+    width: 400px;
+    height: 400px;
+    border: 5px solid rgb(231, 193, 96);
+}
+
+.dossier-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    list-style-type: none;
+    gap: 10px 30px;
+}
+
+.dossier-image {
+    width: 400px;
+    height: 400px;
+    border: 5px solid rgb(231, 193, 96);
+}
