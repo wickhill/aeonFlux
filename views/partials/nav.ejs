@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body class="index-background-img"></body>
-<header>
   <link rel="stylesheet" href="/css/style.css">
+  <title>Citizen Awareness Kiosk</title>
+</head>
+<body>
   <h1 class="kiosk-computer-font-02">Citizen Awareness Kiosk</h1>
-  <nav class="kiosk-computer-font-01">
-    <ul class="kiosk-list-bullet-pts">
-      <% if (currentUser) { %>
-        <li>Welcome, <span style="font-size: 25px;"><%= currentUser.username.toLowerCase() %></span>
-          <div>
+  <% if (currentUser) { %>
+    <div class="index-background-img">
+      <header>
+        <nav class="kiosk-computer-font-01">
+          <ul class="kiosk-list-bullet-pts">
+            <li>Welcome, <span style="font-size: 25px;"><%= currentUser.username.toLowerCase() %></span></li>
             <li class="kiosk-list-spacing"><a href="/about">Learn about the Dream to Awaken Our World</a></li>
             <li class="kiosk-list-spacing"><a href="/reports/">View Your Reports?</a></li>
             <li class="kiosk-list-spacing"><a href="/dossiers/">View all Citizens in Database</a></li>
@@ -22,14 +23,22 @@
                 <input type="submit" value="Logout" />
               </form>
             </li>
-          </div>
-        </li>
-      <% } else { %>
-        <li><a href="/users/new">Kiosk Sign Up</a></li>
-        <li><a href="/sessions/new">Kiosk Sign In</a></li>
-      <% } %>
-    </ul>
-  </nav>
-</header>
+          </ul>
+        </nav>
+      </header>
+      <%- include('../partials/footer.ejs') %>
+    </div>
+  <% } else { %>
+    <div class="login-background-img">
+      <header>
+        <nav class="kiosk-computer-font-01">
+          <ul class="kiosk-list-bullet-pts">
+            <li class="kiosk-list-spacing"><a href="/users/new">Kiosk Sign Up</a></li>
+            <li class="kiosk-list-spacing"><a href="/sessions/new">Kiosk Sign In</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  <% } %>
 </body>
 </html>
