@@ -6,19 +6,19 @@
     <title>Personal Reports by Citizen</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-    <h1>Personal Reports by Citizen <%= currentUser._id %></h1>
-    <h4><a href="/">Kiosk Homepage</a></h4>
+<body class="existingReports-background-img">
+    <h1 class="kiosk-computer-font-06 views-list-spacing">Personal Reports by Citizen <%= currentUser._id %></h1>
+    <h4 class="kiosk-computer-font-05 views-list-spacing"><a href="/">Kiosk Homepage</a></h4>
     <ul class="dossier-list">
         <% citizens.forEach(function(citizen) { %>
             <li>
                 <img src="<%= citizen.citizenProfileImage %>" alt="Profile image of <%= citizen.name %>" class="dossier-image" onerror="this.onerror=null; this.src='/path/to/default/image.jpg';">
-                <p>name: <%= citizen.name %></p>
-                <p>nationality: <%= citizen.nationality %></p>
-                <p>skills: <%= citizen.skills%></p>
-                <p>charges: <%= citizen.charges%></p>
-                <p>confirmed spy: <%= citizen.is_spy %></p>
-                <p>requires investigation: <%= citizen.requiresInvestigation %></p>
+                <p class="kiosk-computer-font-04">name: <%= citizen.name %></p>
+                <p class="kiosk-computer-font-04">nationality: <%= citizen.nationality %></p>
+                <p class="kiosk-computer-font-04">skills: <%= citizen.skills%></p>
+                <p class="kiosk-computer-font-04">charges: <%= citizen.charges%></p>
+                <p class="kiosk-computer-font-04">confirmed spy: <%= citizen.is_spy %></p>
+                <p class="kiosk-computer-font-04">requires investigation: <%= citizen.requiresInvestigation %></p>
                 <form action="/reports/<%= citizen._id %>/edit" method="GET">
                     <input type="submit" value="Edit Citizen Report" />
                 </form>
@@ -26,6 +26,6 @@
             </li>
         <% }) %>
     </ul>
-    <h4><a href="/">Kiosk Homepage</a></h4>
+    <h4 class="kiosk-computer-font-05 views-list-spacing"><a href="/">Kiosk Homepage</a></h4>
 </body>
 </html>
