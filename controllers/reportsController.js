@@ -6,7 +6,7 @@ const Citizen = require('../models/citizen');
 
 router.get('/', async (req, res) => {
     if (!req.session.currentUser) {
-        return res.redirect('/session/new');
+        return res.redirect('/sessions/new');
     }
 
     const userReports = await Citizen.find({ createdBy: req.session.currentUser._id });
