@@ -2,7 +2,7 @@
 
 .kiosk-computer-font-01 {
     font-family: 'Orbitron', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .kiosk-computer-font-03 {
@@ -22,11 +22,17 @@
 
 .kiosk-computer-font-04 {
     font-family: "VT323", monospace;
-    font-weight: 400;
+    font-weight: 550;
     font-style: normal;
     font-size: 12px;
 }
-  
+
+.kiosk-computer-font-06 {
+    font-family: "VT323", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+}
 
 #trevor-and-clavius-image {
     width: 800px !important;
@@ -87,5 +93,6 @@
 .kiosk-list-spacing {
     margin: 10px;
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 22px;
+    margin-top: 22px;
 }
