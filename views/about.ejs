@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chairmain Goodchild</title>
-<head>
-    
-    <%- include('./partials/head.ejs', {title: `About Chairman Goodchild's Dream for a Harmonious Bregna`}) %>
-    
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="/assets/trevor-goodchild-icon-01-512x512.png">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chairmain Goodchild</title>
+  <head>
+    <%- include('./partials/head.ejs', {title: `About Chairman Goodchild's Dream
+    for a Harmonious Bregna`}) %>
 
-</head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="/assets/trevor-goodchild-icon-02-512x512.png" />
+  </head>
 
-<body class="about-background-img">
-
+  <body class="about-background-img">
     <main class="views-list-spacing">
-        <section class="chairman">
-            <h1 class="kiosk-computer-font-01"><span style="font-size: 30px;">About Chairmain Goodchild:</span></h1>
-            <h4><i><span style="font-size: 27px;">Leading a Unified and Harmonious Bregna Since 7017</span></i></h4>
-            <img src="https://i.imgur.com/sRKFnI0.jpg" alt="photograph of <%= citizen.name %>" id="trevor-and-clavius-image">
-        </section>
+      <section class="chairman">
+        <h1 class="kiosk-computer-font-01">
+          <span style="font-size: 30px">About Chairmain Goodchild:</span>
+        </h1>
+        <h4>
+          <i
+            ><span style="font-size: 27px"
+              >Leading a Unified and Harmonious Bregna Since 7017</span
+            ></i
+          >
+        </h4>
+        <img
+          src="https://i.imgur.com/sRKFnI0.jpg"
+          alt="photograph of <%= citizen.name %>"
+          id="trevor-and-clavius-image"
+        />
+      </section>
     </main>
 
-    
     <div class="kiosk-computer-font-06 views-list-spacing">
-
-    <a href="/">Kiosk Homepage</a>
-
-</div>
+      <a href="/">Kiosk Homepage</a>
+    </div>
 
     <%- include('./partials/footer.ejs') %>
-    
-</body>
+  </body>
 </html>
