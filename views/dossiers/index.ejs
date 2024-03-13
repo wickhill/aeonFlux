@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Citizen Dossiers</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" href="../assets/aeon-flux-icon-02-512x512.png">
-</head>
-<body class="dossiers-background-img">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="../assets/aeon-flux-icon-02-512x512.png" />
+  </head>
+  <body class="dossiers-background-img">
     <h1 class="kiosk-computer-font-01 views-list-spacing">Citizen Dossiers</h1>
-    <h4 class="kiosk-computer-font-06 views-list-spacing"><a href="/">Kiosk Homepage</a></h4>
+    <h4 class="kiosk-computer-font-06 views-list-spacing">
+      <a href="/">Kiosk Homepage</a>
+    </h4>
     <ul class="dossier-list">
-        <% citizens.forEach(function(citizen) { %>
-            <li class="kiosk-computer-font-04">
-                <img src="<%= citizen.citizenProfileImage %>" alt="Profile image of <%= citizen.name %>" class="dossier-image" onerror="this.onerror=null; this.src='/path/to/default/image.jpg';">
-                <p>name: <%= citizen.name %></p>
-                <p>nationality: <%= citizen.nationality %></p>
-                <p>skills: <%= citizen.skills%></p>
-                <p>charges: <%= citizen.charges%></p>
-                <p>confirmed spy: <%= citizen.is_spy %></p>
-                <p>requires investigation: <%= citizen.requiresInvestigation %></p>
-            </li>
-        <% }) %>
+      <% citizens.forEach(function(citizen) { %>
+      <li class="kiosk-computer-font-04">
+        <img
+          src="<%= citizen.citizenProfileImage %>"
+          alt="Profile image of <%= citizen.name %>"
+          class="dossier-image"
+          onerror="this.onerror=null; this.src='/path/to/default/image.jpg';"
+        />
+        <p>name: <%= citizen.name %></p>
+        <p>nationality: <%= citizen.nationality %></p>
+        <p>skills: <%= citizen.skills%></p>
+        <p>charges: <%= citizen.charges%></p>
+        <p>confirmed spy: <%= citizen.is_spy %></p>
+        <p>requires investigation: <%= citizen.requiresInvestigation %></p>
+      </li>
+      <% }) %>
     </ul>
-    <h4 class="kiosk-computer-font-06 views-list-spacing"><a href="/">Kiosk Homepage</a></h4>
+    <h4 class="kiosk-computer-font-06 views-list-spacing">
+      <a href="/">Kiosk Homepage</a>
+    </h4>
 
     <%- include('../partials/footer.ejs') %>
-    
-</body>
+  </body>
 </html>

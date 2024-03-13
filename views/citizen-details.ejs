@@ -2,27 +2,30 @@
 <html lang="en">
 
 <head>
-     <%- include('./partials/head.ejs', {title: 'Show Page'}) %>
-    <link rel="stylesheet" href="../css/styles.css">
+    <%- include('./partials/head.ejs', {title: 'Citizen Report Accepted'}) %>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="../assets/trevor-goodchild-icon-01-512x512.png">
 </head>
 
-<body>
+<body class="completedReports-background-img">
 
     <nav>
         <!-- REMEMBER TO ALTER THE TAGS BELOW WHEN YOU WANT TO USE THEM!!  -->
-        <%- include('./partials/nav.ejs') %>
+        <%# include('./partials/nav.ejs') %>
     </nav>
 
-    <h1>Citizens Show Page</h1>
+    <h1 class="views-list-spacing kiosk-computer-font-01">New Report Accepted</h1>
     
     <p>
     <% if(citizen){ %>
 
-      Your report on <span style="font-size: 18px;"><%= citizen.name.toUpperCase() %></span> related to the charge of <span style="font-size: 18px;"><%= citizen.charges.toUpperCase() %></span> has been successful.
+        <div class="views-list-spacing kiosk-computer-font-06">
+
+        Your report on <span class="kiosk-computer-font-01" style="font-size: 24px;">&nbsp;<%= citizen.name.toUpperCase() %></span> related to the charge of <span class="kiosk-computer-font-01" style="font-size: 24px;"><%= citizen.charges.toUpperCase() %></span> has been successful.
       
       <br><br>
       
-      Thank you for doing your part: <span style="font-size: 18px;"> <i>Citizen <%= currentUser._id.toUpperCase() %></i></span>.
+      Thank you for doing your part: <span class="kiosk-computer-font-01" style="font-size: 24px;"> Citizen <%= currentUser._id.toUpperCase() %></span>.
 
       <br><br>
 
@@ -44,12 +47,14 @@
 
     <% } %>
 </p>
-<div>
-    <a href="/citizens/<%= citizen._id %>/edit">Provide Additional Information regarding this Citizen</a>
 </div>
+
+<a href="/reports/<%= citizen._id %>/edit" class="views-list-spacing kiosk-computer-font-08" style="font-size: 15px;">[Are you really done? Click here to supplement information]</a>
+
+<br>
 <br>
 
-    <a href="/">Kiosk Home</a>
+<a href=" /citizens" class="views-list-spacing kiosk-computer-font-05">Kiosk Home</a>
 
     <%- include('./partials/footer.ejs') %>
 

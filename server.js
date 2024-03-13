@@ -87,6 +87,7 @@ app.get('/', function (req, res) {
   res.redirect('/citizens')
 });
 
+// SEED function
 app.get('/seed', function (req, res) {
     // Remove any existing citizens
     db.Citizen.deleteMany({})
@@ -101,7 +102,7 @@ app.get('/seed', function (req, res) {
                 })
         })
 });
-// render the about us page
+// Render ABOUT Chairman Goodchild page
 app.get('/about', function (req, res) {
     const trevor = citizens.find(citizen => citizen.name === 'trevor goodchild');
     res.render('about', { citizen: trevor });

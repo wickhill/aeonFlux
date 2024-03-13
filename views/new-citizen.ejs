@@ -1,76 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
+  <head>
     <%- include('./partials/head.ejs', {title: `New Citizen`}) %>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" href="../assets/trevor-goodchild-icon-01-512x512.png">
-</head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="../assets/trevor-goodchild-icon-01-512x512.png" />
+  </head>
 
-<body class="newReports-background-img">
-
+  <body class="newReports-background-img">
     <div class="views-list-spacing">
+      <h1 class="kiosk-computer-font-02">Create New Citizen Report</h1>
 
-    <h1 class="kiosk-computer-font-02">Create New Citizen Report</h1>
-    
-    <br>
+      <br />
 
-    <form action="/citizens/" method="post">
-
+      <!-- Submission Form -->
+      <form action="/citizens/" method="post">
         <!-- Name input -->
         <label for="name" class="kiosk-computer-font-08">Name:</label>
-        <input type="text" name="name" id="name" placeholder="Enter citizen's name"/>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter citizen's name"
+        />
 
         <!-- Nationality input -->
-        <label for="nationality" class="kiosk-computer-font-08">Nationality:</label>
-        <input type="text" name="nationality" id="nationality" placeholder="Enter their nationality"/>
+        <label for="nationality" class="kiosk-computer-font-08"
+          >Nationality:</label
+        >
+        <input
+          type="text"
+          name="nationality"
+          id="nationality"
+          placeholder="Enter their nationality"
+        />
 
-        <br>
+        <br />
 
         <!-- Confirmed Spy input -->
-        <label for="is_spy" class="kiosk-computer-font-08">Confirmed Spy?:</label> 
+        <label for="is_spy" class="kiosk-computer-font-08"
+          >Confirmed Spy?:</label
+        >
         <select name="is_spy" id="is_spy">
-            <option value="true">true</option>
-            <option value="false">false</option>
+          <option value="true">true</option>
+          <option value="false">false</option>
         </select>
 
         <!-- Hair Color input -->
-        <label for="hairColor" class="kiosk-computer-font-08">Hair Color:</label> 
-        <input type="text" name="hairColor" id="hairColor" placeholder="Enter hair color"/>
+        <label for="hairColor" class="kiosk-computer-font-08"
+          >Hair Color:</label
+        >
+        <input
+          type="text"
+          name="hairColor"
+          id="hairColor"
+          placeholder="Enter hair color"
+        />
 
         <!-- Eye Color input -->
-        <label for="eyeColor" class="kiosk-computer-font-08">Eye Color:</label> 
-        <input type="text" name="eyeColor" id="eyeColor" placeholder="Enter eye color"/>
+        <label for="eyeColor" class="kiosk-computer-font-08">Eye Color:</label>
+        <input
+          type="text"
+          name="eyeColor"
+          id="eyeColor"
+          placeholder="Enter eye color"
+        />
 
-        <br>
+        <br />
 
         <!-- Charges Against input -->
-        <label for="charges" class="kiosk-computer-font-08">Charges:</label> 
-        <input type="text" name="charges" id="charges" placeholder="Enter claims against citizen"/>
+        <label for="charges" class="kiosk-computer-font-08">Charges:</label>
+        <input
+          type="text"
+          name="charges"
+          id="charges"
+          placeholder="Enter claims against citizen"
+        />
 
         <!-- Testimonial For input -->
-        <label for="testimonial" class="kiosk-computer-font-08">Testimonial:</label> 
-        <input type="text" name="testimonial" id="testimonial" placeholder="Enter unverified testimony in favor of citizen"/>
+        <label for="testimonial" class="kiosk-computer-font-08"
+          >Testimonial:</label
+        >
+        <input
+          type="text"
+          name="testimonial"
+          id="testimonial"
+          placeholder="Enter unverified testimony in favor of citizen"
+        />
 
-        <br>
+        <br />
 
         <!-- citizenProfileImage input -->
-        <label for="citizenProfileImage" class="kiosk-computer-font-08">Evidence Image URL:</label>
-        <input type="url" name="citizenProfileImage" id="citizenProfileImage" placeholder="Enter image URL" />
+        <label for="citizenProfileImage" class="kiosk-computer-font-08"
+          >Evidence Image URL:</label
+        >
+        <input
+          type="url"
+          name="citizenProfileImage"
+          id="citizenProfileImage"
+          placeholder="Enter image URL"
+        />
 
-        <br>
-        
+        <br />
+
         <!-- requiresInvestigation input -->
-        <label for="requiresInvestigation" class="kiosk-computer-font-08">Requires Investigation?</label>
-        <input type="checkbox" name="requiresInvestigation" id="requiresInvestigation" value="on"/>
-        <input type="submit" value="Create Citizen Report"/>
-    </form>
-<br><br>
-    <a href=" /citizens" class="kiosk-computer-font-05">Kiosk Home</a>
-
+        <label for="requiresInvestigation" class="kiosk-computer-font-08"
+          >Requires Investigation?</label
+        >
+        <input
+          type="checkbox"
+          name="requiresInvestigation"
+          id="requiresInvestigation"
+          value="on"
+        />
+        <input type="submit" value="Create Citizen Report" />
+      </form>
+      <br /><br />
+      <a href=" /citizens" class="kiosk-computer-font-05">Kiosk Home</a>
     </div>
 
     <%- include('./partials/footer.ejs') %>
-
-</body>
+  </body>
 </html>

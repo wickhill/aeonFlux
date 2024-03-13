@@ -12,7 +12,6 @@ const router = express.Router();
 // bring in the isAuthenticated middleware
 const isAuthenticated = require("../controllers/isAuthenticated");
 
-
 /* Require db connection and models
 --------------------------------------------------------------- */
 const db = require("../models");
@@ -23,12 +22,12 @@ router.use(isAuthenticated);
 
 // INDEX
 router.get("/", (req, res) => {
-    db.Citizen.find({ user: req.session.currentUser._id }).then((citizens) => {
-      res.render("citizen-home", { 
-          citizens: citizens,
-          currentUser: req.session.currentUser
-       });
+  db.Citizen.find({ user: req.session.currentUser._id }).then((citizens) => {
+    res.render("citizen-home", {
+      citizens: citizens,
+      currentUser: req.session.currentUser,
     });
+  });
 });
 
 // NEW
@@ -37,7 +36,8 @@ router.get("/new", (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  req.body.requiresInvestigation = req.body.requiresInvestigation === "on" ? true : false;
+  req.body.requiresInvestigation =
+    req.body.requiresInvestigation === "on" ? true : false;
   req.body.is_spy = req.body.is_spy === "true";
   console.log(req.session);
   req.body.createdBy = req.session.currentUser._id;
@@ -58,7 +58,7 @@ router.get("/:id", function (req, res) {
     .then((citizen) => {
       res.render("citizen-details", {
         citizen: citizen,
-        currentUser: req.session.currentUser 
+        currentUser: req.session.currentUser,
       });
     })
     .catch(() => res.render("404"));
@@ -68,8 +68,8 @@ router.get("/:id", function (req, res) {
 router.get("/:id/edit", (req, res) => {
   db.Citizen.findById(req.params.id).then((citizen) => {
     res.render("edit-citizen", {
-        citizen: citizen,
-      currentUser: req.session.currentUser 
+      citizen: citizen,
+      currentUser: req.session.currentUser,
     });
   });
 });
@@ -77,26 +77,30 @@ router.get("/:id/edit", (req, res) => {
 // Update:
 router.put("/:id", async (req, res) => {
   if (req.body.requiresInvestigation === "on") {
-      req.body.requiresInvestigation = true;
+    req.body.requiresInvestigation = true;
   } else {
-      req.body.requiresInvestigation = false;
+    req.body.requiresInvestigation = false;
   }
 
-  // Very cool bit of code, which prevents a 'blank' URL value from erasing an existing value and (therefore) image!
+  // Very cool bit of code that prevents a 'blank' URL value from erasing prior values and (therefore) the images on file!
   const updateObject = { ...req.body };
-  if (!req.body.citizenProfileImage || req.body.citizenProfileImage.trim() === "") {
-      delete updateObject.citizenProfileImage;
+  if (
+    !req.body.citizenProfileImage ||
+    req.body.citizenProfileImage.trim() === ""
+  ) {
+    delete updateObject.citizenProfileImage;
   }
 
   try {
-      await db.Citizen.findByIdAndUpdate(req.params.id, updateObject, { new: true });
-      res.redirect("/citizens/" + req.params.id);
+    await db.Citizen.findByIdAndUpdate(req.params.id, updateObject, {
+      new: true,
+    });
+    res.redirect("/citizens/" + req.params.id);
   } catch (error) {
-      console.error(error);
-      res.status(500).send('Error updating citizen.');
+    console.error(error);
+    res.status(500).send("Error updating citizen.");
   }
 });
-
 
 // Delete:
 router.delete("/:id", async (req, res) => {

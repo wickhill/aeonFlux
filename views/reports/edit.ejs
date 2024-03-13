@@ -1,97 +1,137 @@
-<head>
-    <%- include('../partials/head.ejs', {title: `Edit ${citizen.name} | Citizen Finder`}) %>
-    <link rel="stylesheet" href="../css/forms.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head.ejs', {title: `Edit
+    ${citizen.name.toUpperCase()} | Citizen Report`}) %>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="/assets/trevor-goodchild-icon-01-512x512.png" />
+  </head>
 
-    <style>
-        .report-image {
-            width: 400px;
-            height: 400px;
-            border: 5px solid rgb(231, 193, 96);
-        }
-    </style>
+  <body class="editReports-background-img">
+    <div class="views-list-spacing">
+      <h1 class="kiosk-computer-font-02">Edit Existing Citizen Report:</h1>
 
-</head>
+      <br />
 
-<body>
-    
-    <%- include('../partials/nav.ejs') %>
-
-    <section class="informant">
-        <h2>Edit Citizen Report:</h2>
-    </section>
-
-    <form method="POST" action="/citizens/<%= citizen._id %>?_method=PUT">
-
-    <span>
-
-    <img class="report-image" src=" <%= citizen.citizenProfileImage %> " alt="">
-    
-    </span>
-
-    <br>
-
+      <!-- Submission Form -->
+      <form method="POST" action="/citizens/<%= citizen._id %>?_method=PUT">
         <!-- Name input -->
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" value="<%= citizen.name %>" required>
-        
-        <br>
+        <label for="name" class="kiosk-computer-font-08">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          value="<%= citizen.name %>"
+          required
+        />
 
         <!-- Nationality input -->
-        <label for="nationality">Nationality:</label>
-        <input type="text" name="nationality" id="nationality" value="<%= citizen.nationality %>" required>
-        
-        <br>
+        <label for="nationality" class="kiosk-computer-font-08"
+          >Nationality:</label
+        >
+        <input
+          type="text"
+          name="nationality"
+          id="nationality"
+          value="<%= citizen.nationality %>"
+          required
+        />
+
+        <br />
 
         <!-- Confirmed Spy input -->
-        <label for="is_spy">Confirmed Spy?:</label> 
+        <label for="is_spy" class="kiosk-computer-font-08"
+          >Confirmed Spy?:</label
+        >
         <select name="is_spy" id="is_spy">
-        <option value="true">true</option>
-        <option value="false">false</option>
+          <option value="true">true</option>
+          <option value="false">false</option>
         </select>
 
         <!-- Hair Color input -->
-        <label for="hairColor">Hair Color:</label> 
-        <input type="text" name="hairColor" id="hairColor" value="<%= citizen.hairColor %>"/>
+        <label for="hairColor" class="kiosk-computer-font-08"
+          >Hair Color:</label
+        >
+        <input
+          type="text"
+          name="hairColor"
+          id="hairColor"
+          value="<%= citizen.hairColor %>"
+        />
 
         <!-- Eye Color input -->
-        <label for="eyeColor">Eye Color:</label> 
-        <input type="text" name="eyeColor" id="eyeColor" value="<%= citizen.eyeColor %>"/>
+        <label for="eyeColor" class="kiosk-computer-font-08">Eye Color:</label>
+        <input
+          type="text"
+          name="eyeColor"
+          id="eyeColor"
+          value="<%= citizen.eyeColor %>"
+        />
 
-        <br>
+        <br />
 
         <!-- Charges Against input -->
-        <label for="charges">Charges:</label> 
-        <input type="text" name="charges" id="charges" value="<%= citizen.charges %>"/>
+        <label for="charges" class="kiosk-computer-font-08">Charges:</label>
+        <input
+          type="text"
+          name="charges"
+          id="charges"
+          value="<%= citizen.charges %>"
+        />
 
         <!-- Testimonial For input -->
-        <label for="testimonial">Testimonial:</label> 
-        <input type="text" name="testimonial" id="testimonial" value="<%= citizen.testimonial %>"/>
+        <label for="testimonial" class="kiosk-computer-font-08"
+          >Testimonial:</label
+        >
+        <input
+          type="text"
+          name="testimonial"
+          id="testimonial"
+          value="<%= citizen.testimonial %>"
+        />
 
-        <br>
+        <br />
 
-        <label for="citizenProfileImage">Evidence Image URL:</label>
         <!-- citizenProfileImage input -->
-        <input type="url" name="citizenProfileImage" id="citizenProfileImage" placeholder="Enter New image URL" />
-    
-        <br>
-            
+        <label for="citizenProfileImage" class="kiosk-computer-font-08"
+          >Evidence Image URL:</label
+        >
+        <input
+          type="url"
+          name="citizenProfileImage"
+          id="citizenProfileImage"
+          placeholder="New image URL?"
+        />
+
         <!-- Requires Investigation input -->
-        <label for="requiresInvestigation">Requires Investigation</label>
-         <input type="checkbox" name="requiresInvestigation" id="requiresInvestigation" <%= citizen.requiresInvestigation ? 'checked' : '' %> >
+        <label for="requiresInvestigation" class="kiosk-computer-font-08"
+          >Requires Investigation?</label
+        >
+        <input type="checkbox" name="requiresInvestigation"
+        id="requiresInvestigation" <%= citizen.requiresInvestigation ? 'checked'
+        : '' %> >
 
-         <br>
+        <br />
+        <br />
 
-          <br>
-          <br>
-       
-        <input type="submit" value="Edit Citizen">
+        <!-- Existing Image -->
+        <img
+          class="report-image"
+          src="<%= citizen.citizenProfileImage %>"
+          alt=""
+        />
 
-    </form>
+        <br />
+        <br />
 
-    <div>
-        <a href="/citizens/<%= citizen._id %>">Return to Kiosk without Editing Citizen Information</a> 
+        <input type="submit" value="Edit Citizen" />
+      </form>
+      <br /><br />
+      <a href="/citizens/<%= citizen._id %>"
+        >Return to Kiosk without Editing Citizen Information</a
+      >
     </div>
 
     <%- include('../partials/footer.ejs') %>
-
-</body>
+  </body>
+</html>
