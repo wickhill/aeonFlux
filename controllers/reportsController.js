@@ -37,37 +37,4 @@ router.get("/:id/edit", async (req, res) => {
   }
 });
 
-// UPDATE
-// router.put("/:id", async (req, res) => {
-//     if (!req.session.currentUser) {
-//         return res.redirect('/session/new');
-//     }
-
-//     try {
-//         req.body.requiresInvestigation = req.body.requiresInvestigation === "on" ? true : false;
-//         req.body.is_spy = req.body.is_spy === "true";
-
-//         if (req.body.citizenProfileImage && req.body.citizenProfileImage.trim() !== "") {
-//             req.body.citizenProfileImage = req.body.citizenProfileImage.trim();
-//         } else {
-//             delete req.body.citizenProfileImage;
-//         }
-
-//         const updatedCitizen = await db.Citizen.findOneAndUpdate(
-//             { _id: req.params.id, createdBy: req.session.currentUser._id },
-//             req.body,
-//             { new: true, runValidators: true }
-//         );
-
-//         if (!updatedCitizen) {
-//             return res.status(404).send('Unable to find and update the report.');
-//         }
-
-//         res.redirect("/reports/" + updatedCitizen._id);
-//     } catch (error) {
-//         console.error(error);
-//         res.status(500).send('Kiosk error. Please Contact Supervisor Immediately.');
-//     }
-// });
-
 module.exports = router;

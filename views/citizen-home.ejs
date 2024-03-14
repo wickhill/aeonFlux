@@ -7,17 +7,22 @@
       <nav>
         <%- include('./partials/nav.ejs') %>
       </nav>
-      <!-- <h1 class="kiosk-computer-font-06">Citizen. You are viewing the Index Page.</h1> -->
-     <ul> 
-          <% citizens.forEach((item, index) => { %>
-          <li>
-              <a href="/citizens/<%=item._id %>"><%= item.name %></a>
-  
-              <form action="/citizens/<%= item._id %>?_method=DELETE" method="POST">
-                <input type="submit" value="DELETE">
-              </form>
-          </li>
-          <% }) %>
-      </ul>
-    </body>
-  </html>
+
+  <ul> 
+    <!-- List of citizens for displayed on this page -->
+      <!-- Iterate over citizens array passed from server -->
+      <% citizens.forEach((item, index) => { %>
+      <li>
+          <!-- Create links to individual citizen's pages using their ID's -->
+          <a href="/citizens/<%=item._id %>"><%= item.name %></a>
+
+          <!-- Form to delete a citizen, using POST method with a query to override it to DELETE -->
+          <form action="/citizens/<%= item._id %>?_method=DELETE" method="POST">
+            <!-- Submit button for the form to delete the citizen -->
+            <input type="submit" value="DELETE">
+          </form>
+      </li>
+      <% }) %>
+  </ul>
+</body>
+</html>

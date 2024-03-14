@@ -10,14 +10,13 @@
   <body>
     <%- include('../partials/nav') %>
     <div>
-      <header
-        class="login-background-img kiosk-computer-font-02 kiosk-list-spacing"
-      >
-        <h1>Sign Uppp</h1>
+      <header>
+        <h1>Sign Up</h1>
+        <!-- Form to login / sign in existing app user -->
         <form action="/users" method="POST">
           Username: <input required type="text" name="username" /><br />
           Password: <input required type="text" name="password" /><br />
-          <input type="submit" name="" value="Sign Up" />
+          <input type="submit" name="" value="Create New User" />
         </form>
       </header>
     </div>

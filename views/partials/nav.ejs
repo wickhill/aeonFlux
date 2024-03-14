@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <title>Citizen Awareness Kiosk</title>
-</head>
-<body>
-  <h1 class="kiosk-computer-font-02">Citizen Awareness Kiosk</h1>
-  <% if (currentUser) { %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Citizen Awareness Kiosk</title>
+  </head>
+  <body>
+    <h1 class="kiosk-computer-font-02">Citizen Awareness Kiosk</h1>
+    <% if (currentUser) { %>
     <div class="index-background-img">
       <header>
         <nav class="kiosk-computer-font-01">
           <ul class="kiosk-list-bullet-pts">
-            <li>Welcome, <span style="font-size: 25px;"><%= currentUser.username.toLowerCase() %></span></li>
-            <li class="kiosk-list-spacing"><a href="/about">Learn about the Dream to Awaken Our World</a></li>
-            <li class="kiosk-list-spacing"><a href="/reports/">View Your Reports?</a></li>
-            <li class="kiosk-list-spacing"><a href="/dossiers/">View all Citizens in Database</a></li>
-            <li class="kiosk-list-spacing"><a href="/citizens/new">Create a New Citizen Report</a></li>
+            <li>
+              Welcome,
+              <span style="font-size: 25px"
+                ><%= currentUser.username.toLowerCase() %></span
+              >
+            </li>
+            <li class="kiosk-list-spacing">
+              <a href="/about">Learn about the Dream to Awaken Our World</a>
+            </li>
+            <li class="kiosk-list-spacing">
+              <a href="/reports/">View Your Reports?</a>
+            </li>
+            <li class="kiosk-list-spacing">
+              <a href="/dossiers/">View all Citizens in Database</a>
+            </li>
+            <li class="kiosk-list-spacing">
+              <a href="/citizens/new">Create a New Citizen Report</a>
+            </li>
             <li class="kiosk-list-spacing">
               <form action="/sessions/?_method=DELETE" method="POST">
                 <input type="submit" value="Logout" />
@@ -28,17 +41,21 @@
       </header>
       <%- include('../partials/footer.ejs') %>
     </div>
-  <% } else { %>
+    <% } else { %>
     <div class="login-background-img">
       <header>
         <nav>
           <ul class="kiosk-list-bullet-pts">
-            <li class="kiosk-list-spacing"><a href="/users/new">Kiosk Sign Up</a></li>
-            <li class="kiosk-list-spacing"><a href="/sessions/new">Kiosk Sign In</a></li>
+            <li class="kiosk-list-spacing">
+              <a href="/users/new">Kiosk Sign Up</a>
+            </li>
+            <li class="kiosk-list-spacing">
+              <a href="/sessions/new">Kiosk Sign In</a>
+            </li>
           </ul>
         </nav>
       </header>
     </div>
-  <% } %>
-</body>
+    <% } %>
+  </body>
 </html>
