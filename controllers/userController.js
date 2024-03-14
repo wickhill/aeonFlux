@@ -4,7 +4,7 @@ const db = require("../models");
 const bcrypt = require("bcrypt");
 
 router.get("/new", (req, res) => {
-  res.render("users/newCitizen", { currentUser: req.session.currentUser });
+  res.render("users/newKioskUser", { currentUser: req.session.currentUser });
 });
 
 router.post("/", async (req, res) => {
