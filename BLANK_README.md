@@ -19,9 +19,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+  <div align="center">
   <a href="https://github.com/wickhill/aeonFlux">
-    <img src="aeon-feather-icon.jpg" alt="Logo" width="80" height="80">
+    <img src="aeon-feather-icon.png" alt="Logo" width="80" height="80">
   </a>
+  </div>
 
 <h3 align="center">project_title</h3>
 
