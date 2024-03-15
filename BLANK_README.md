@@ -74,7 +74,9 @@
   <img src="aeon-flux-02.jpg" alt="Product Name Screen Shot" width="400" height="400">
 </a>
 
-Æon Flux, known for its surreal storylines and philosophical musings, unfolds in a dystopian future. In this world, the cryptic protagonist, Æon, often confronts her adversary — and sometimes lover — the ambiguous Trevor Goodchild, who governs the utopian city-state of Bregna. This project is designed to establish a comprehensive Æon Flux database and API, creating an opportunity for fans to discover and share detailed information about the series. `https://github.com/wickhill`, `repo_name`, `twitter.com/wickstarter`, `https://www.linkedin.com/in/wickhill/`
+The animated show Æon Flux, known for its surreal storylines and philosophical musings, unfolds in a dystopian future where two city-states, Monica and Bregna, engage in endless and often unresolved discord. Æon, the cryptic Monican protagonist, often confronts her adversary — and sometimes lover — the ambiguous Trevor Goodchild, who governs the utopian city-state of Bregna. This project is designed to establish a comprehensive Æon Flux database and API, creating an opportunity for fans to discover and share detailed information about the series.
+
+[GitHub Project](https://github.com/wickhill), [Project Page](https://github.com/wickhill/aeonFlux), [Twitter](https://twitter.com/wickstarter), [LinkedIn](https://www.linkedin.com/in/wickhill/).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
