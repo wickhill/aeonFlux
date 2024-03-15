@@ -8,7 +8,10 @@
   </head>
   <body>
     <h1 class="kiosk-computer-font-02">Citizen Awareness Kiosk</h1>
+
+    <!-- Check if there's a user logged in -->
     <% if (currentUser) { %>
+    <!-- Content for display if user logged in -->
     <div class="index-background-img">
       <header>
         <nav class="kiosk-computer-font-01">
@@ -19,6 +22,7 @@
                 ><%= currentUser.username.toLowerCase() %></span
               >
             </li>
+            <!-- Nav links to site routes -->
             <li class="kiosk-list-spacing">
               <a href="/about">Learn about the Dream to Awaken Our World</a>
             </li>
@@ -31,6 +35,7 @@
             <li class="kiosk-list-spacing">
               <a href="/citizens/new">Create a New Citizen Report</a>
             </li>
+            <!-- Logout form -->
             <li class="kiosk-list-spacing">
               <form action="/sessions/?_method=DELETE" method="POST">
                 <input type="submit" value="Logout" />
@@ -39,13 +44,16 @@
           </ul>
         </nav>
       </header>
+      <!-- Footer Partial -->
       <%- include('../partials/footer.ejs') %>
     </div>
     <% } else { %>
+    <!-- Content for display if no user is logged in -->
     <div class="login-background-img">
       <header>
         <nav>
           <ul class="kiosk-list-bullet-pts">
+            <!-- Sign Up and Sign In links -->
             <li class="kiosk-list-spacing">
               <a href="/users/new">Kiosk Sign Up</a>
             </li>

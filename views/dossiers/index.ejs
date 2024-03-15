@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Citizen Dossiers</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Favicon Icon for page -->
     <link rel="icon" href="../assets/aeon-flux-icon-03-512x512.png" />
   </head>
   <body class="dossiers-background-img">
@@ -12,29 +13,35 @@
     <h4 class="kiosk-computer-font-06 views-list-spacing">
       <a href="/">Kiosk Homepage</a>
     </h4>
+    <!-- Citizen Dossiers List -->
     <ul class="dossier-list">
+      <!-- Loop thru each citizen and display their info -->
       <% citizens.forEach(function(citizen) { %>
       <li class="kiosk-computer-font-04">
+        <!-- Begin by displaying citizen's profile image -->
         <img
           src="<%= citizen.citizenProfileImage %>"
           alt="Profile image of <%= citizen.name %>"
           class="dossier-image"
           onerror="this.onerror=null; this.src='/path/to/default/image.jpg';"
         />
+        <!-- Citizen attributes -->
         <p>name: <%= citizen.name %></p>
         <p>nationality: <%= citizen.nationality %></p>
-        <p>skills: <%= citizen.skills%></p>
-        <p>charges: <%= citizen.charges%></p>
-        <p>testimonial: <%= citizen.testimonial%></p>
+        <p>skills: <%= citizen.skills %></p>
+        <p>charges: <%= citizen.charges %></p>
+        <p>testimonial: <%= citizen.testimonial %></p>
         <p>confirmed spy: <%= citizen.is_spy %></p>
         <p>requires investigation: <%= citizen.requiresInvestigation %></p>
       </li>
       <% }) %>
     </ul>
+    <!-- Navigation link to homepage, having at page's top and bottom for convenience -->
     <h4 class="kiosk-computer-font-06 views-list-spacing">
       <a href="/">Kiosk Homepage</a>
     </h4>
 
+    <!-- Footer Partial -->
     <%- include('../partials/footer.ejs') %>
   </body>
 </html>
