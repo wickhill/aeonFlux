@@ -16,18 +16,11 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][[contributors-url](https://github.com/wickhill/aeonFlux)]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/wickhill/aeonFlux">
-    <img src="/images/aeon-flux-logo-80x80.jpg" alt="Logo" width="80" height="80">
+    <img src="/images/aeon-feather-icon.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">project_title</h3>
@@ -76,22 +69,9 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://i.imgur.com/qhb76PN.jpg)
+[![Product Name Screen Shot][/images/aeon-flux-02-git-pic.jpg]](https://github.com/wickhill/aeonFlux)
 
 Aeon Flux, known for its surreal storylines and philosophical musings, unfolds in a dystopian future. In this world, the cryptic protagonist, Aeon, often confronts her adversary — and sometimes lover — the ambiguous Trevor Goodchild, who governs the utopian city-state of Bregna. This project is designed to establish a comprehensive Aeon Flux database and API, creating an opportunity for fans to discover and share detailed information about the series. `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-### Built With
-
-- [![Next][Next.js]][Next-url]
-- [![React][React.js]][React-url]
-- [![Vue][Vue.js]][Vue-url]
-- [![Angular][Angular.io]][Angular-url]
-- [![Svelte][Svelte.dev]][Svelte-url]
-- [![Laravel][Laravel.com]][Laravel-url]
-- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-- [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -99,7 +79,7 @@ Aeon Flux, known for its surreal storylines and philosophical musings, unfolds i
 
 ## Getting Started
 
-Click on the project link, sign up (or sign in), and start adding Aeon Flux related photos! It could be anything - alternate profile photos, landscapes.... However, keep in mind that, currently, the app expects (and formats!) square photos.
+Click on the project link, sign up - or sign in - and start adding Aeon Flux related photos! It could be anything - alternate profile photos, landscapes.... However, keep in mind that, currently, the app expects (and formats!) square photos.
 
 ### Prerequisites
 
