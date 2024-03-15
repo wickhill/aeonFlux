@@ -84,7 +84,7 @@ The animated show Æon Flux, known for its surreal storylines and philosophical 
 
 ## Getting Started
 
-Click on the project link, sign up - or sign in - and start adding Æon Flux related photos! It could be anything - alternate profile photos, landscapes.... However, keep in mind that, currently, the app expects (and formats!) square photos.
+Here's how you can get started: just click on the project link, sign up (or sign back in) and start adding Æon Flux related photos! It could be anything - alternate profile photos, landscapes, your collection of narghiles.... However, keep in mind that, currently, the app expects (and formats!) square photos, so anything else may end up looking a little warped.
 
 ### Prerequisites
 
