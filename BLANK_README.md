@@ -16,7 +16,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
+[![Contributors][contributors-shield]][[contributors-url](https://github.com/wickhill/aeonFlux)]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -27,7 +27,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/wickhill/aeonFlux">
-    <img src="/assets/trevor-goodchild-icon-01-512x512.png" alt="Logo" width="80" height="80">
+    <img src="/images/aeon-flux-logo-80x80.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">project_title</h3>
@@ -99,33 +99,16 @@ Aeon Flux, known for its surreal storylines and philosophical musings, unfolds i
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Click on the project link, sign up (or sign in), and start adding Aeon Flux related photos! It could be anything - alternate profile photos, landscapes.... However, keep in mind that, currently, the app expects (and formats!) square photos.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+No pre-reqs!
 
 - npm
   ```sh
   npm install npm@latest -g
   ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
-   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -133,22 +116,13 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+![Sneaky Aeon](https://i.imgur.com/zNFfivd.jpg)
+![Trevor in Charge](https://i.imgur.com/r7lZyIO.jpg)
+![Naïve Nader](https://i.imgur.com/m0uVuTb.jpg)
+![Una Plots](https://i.imgur.com/1rGr7gA.jpg)
+![Guiling Gildemere](https://i.imgur.com/t5BTy6P.jpg)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -181,9 +155,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@twitter_handle](https://twitter.com/wickstarter) - wickhill@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/github_username/repo_name](https://github.com/wickhill/aeonFlux)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
