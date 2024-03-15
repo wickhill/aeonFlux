@@ -66,7 +66,7 @@
 
 <div align="center">
   <a href="https://github.com/wickhill/aeonFlux">
-    <img src="aeon-flux-02-git-600x450.jpg" alt="Æon Flux profile" width="600" height="450">
+    <img src="https://i.imgur.com/xnQgojA.jpg" alt="Citizen Dossiers Page" width="800" height="600">
   </a>
 </div>
 
@@ -97,19 +97,11 @@ No pre-reqs!
 
 ## Additional Stills
 
-  <img src="https://i.imgur.com/xnQgojA.jpg" alt="Product Name Screen Shot" width="800" height="600">
-  <img src="https://i.imgur.com/LawnFxG.jpg" alt="Product Name Screen Shot" width="800" height="600">
-  <img src="https://i.imgur.com/zIIp0Vp.jpg" alt="Product Name Screen Shot" width="800" height="600">
-  <img src="https://i.imgur.com/ST4N8Ac.jpg" alt="Product Name Screen Shot" width="800" height="600">
-  <img src="https://i.imgur.com/1rGr7gA.jpg" alt="Product Name Screen Shot" width="400" height="400">
-
-<!-- ![Sneaky Aeon](https://i.imgur.com/zNFfivd.jpg) -->
-<!-- ![Trevor in Charge](https://i.imgur.com/r7lZyIO.jpg) -->
-<!-- ![Naïve Nader](https://i.imgur.com/m0uVuTb.jpg) -->
-<!-- ![Una Plots](https://i.imgur.com/1rGr7gA.jpg) -->
-<!-- ![Guiling Gildemere](https://i.imgur.com/t5BTy6P.jpg) -->
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+  <img src="https://i.imgur.com/LawnFxG.jpg" alt="Charmain Goodchild About Page" width="800" height="600">
+  <img src="https://i.imgur.com/zIIp0Vp.jpg" alt="Edit Citizen Report Page" width="800" height="600">
+  <img src="https://i.imgur.com/ST4N8Ac.jpg" alt="Personal Reports Page" width="800" height="600">
+  <img src="https://i.imgur.com/1rGr7gA.jpg" alt="Una Profile Photo" width="400" height="400">
+  <img src="aeon-flux-02-git-600x450.jpg" alt="Æon Flux Profile Photo" width="600" height="450">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
