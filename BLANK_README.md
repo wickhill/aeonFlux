@@ -69,7 +69,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot](/images/aeon-flux-02-git-pic.jpg)](https://github.com/wickhill/aeonFlux)
+[![Product Name Screen Shot](./images/aeon-flux-02-git-pic.jpg)](https://github.com/wickhill/aeonFlux)
 
 Aeon Flux, known for its surreal storylines and philosophical musings, unfolds in a dystopian future. In this world, the cryptic protagonist, Aeon, often confronts her adversary — and sometimes lover — the ambiguous Trevor Goodchild, who governs the utopian city-state of Bregna. This project is designed to establish a comprehensive Aeon Flux database and API, creating an opportunity for fans to discover and share detailed information about the series. `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
