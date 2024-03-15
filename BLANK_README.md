@@ -29,14 +29,14 @@
   <p align="center">
     "The Dream To Awaken Our API..."
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/wickhill/aeonFlux"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/wickhill/aeonFlux">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/wickhill/aeonFlux/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/wickhill/aeonFlux/issues">Request Feature</a>
   </p>
 </div>
 
@@ -46,9 +46,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About Aeon Flux: Most Wanted</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -57,12 +54,9 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#addtlStills">Additional Stills</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -70,9 +64,11 @@
 
 ## About The Project
 
-<a href="https://github.com/wickhill/aeonFlux">
-  <img src="aeon-flux-02.jpg" alt="Product Name Screen Shot" width="400" height="400">
-</a>
+<div align="center">
+  <a href="https://github.com/wickhill/aeonFlux">
+    <img src="aeon-flux-02.jpg" alt="Æon Flux profile" width="400" height="400">
+  </a>
+</div>
 
 The animated show Æon Flux, known for its surreal storylines and philosophical musings, unfolds in a dystopian future where two city-states, Monica and Bregna, engage in endless and often unresolved discord. Æon, the cryptic Monican protagonist, often confronts her adversary — and sometimes lover — the ambiguous Trevor Goodchild, who governs the utopian city-state of Bregna. This project is designed to establish a comprehensive Æon Flux database and API, creating an opportunity for fans to discover and share detailed information about the series.
 
@@ -97,9 +93,9 @@ No pre-reqs!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
+<!-- Additional Stills EXAMPLES -->
 
-## Usage
+## Additional Stills
 
   <img src="https://i.imgur.com/zNFfivd.jpg" alt="Product Name Screen Shot" width="600" height="600">
   <img src="https://i.imgur.com/r7lZyIO.jpg" alt="Product Name Screen Shot" width="600" height="600">
