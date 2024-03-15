@@ -20,7 +20,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/wickhill/aeonFlux">
-    <img src="/images/aeon-feather-icon.jpg" alt="Logo" width="80" height="80">
+    <img src="aeon-feather-icon.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">project_title</h3>
@@ -69,7 +69,9 @@
 
 ## About The Project
 
-[![Product Name Screen Shot](aeon-flux-02-git-pic.jpg)](https://github.com/wickhill/aeonFlux)
+<a href="https://github.com/wickhill/aeonFlux">
+  <img src="aeon-flux-02-git-pic.jpg" alt="Product Name Screen Shot" width="600" height="400">
+</a>
 
 Aeon Flux, known for its surreal storylines and philosophical musings, unfolds in a dystopian future. In this world, the cryptic protagonist, Aeon, often confronts her adversary — and sometimes lover — the ambiguous Trevor Goodchild, who governs the utopian city-state of Bregna. This project is designed to establish a comprehensive Aeon Flux database and API, creating an opportunity for fans to discover and share detailed information about the series. `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
@@ -96,11 +98,17 @@ No pre-reqs!
 
 ## Usage
 
-![Sneaky Aeon](https://i.imgur.com/zNFfivd.jpg)
-![Trevor in Charge](https://i.imgur.com/r7lZyIO.jpg)
-![Naïve Nader](https://i.imgur.com/m0uVuTb.jpg)
-![Una Plots](https://i.imgur.com/1rGr7gA.jpg)
-![Guiling Gildemere](https://i.imgur.com/t5BTy6P.jpg)
+  <img src="https://i.imgur.com/zNFfivd.jpg" alt="Product Name Screen Shot" width="600" height="400">
+  <img src="https://i.imgur.com/r7lZyIO.jpg" alt="Product Name Screen Shot" width="600" height="400">
+  <img src="https://i.imgur.com/m0uVuTb.jpg" alt="Product Name Screen Shot" width="600" height="400">
+  <img src="https://i.imgur.com/1rGr7gA.jpg" alt="Product Name Screen Shot" width="600" height="400">
+  <img src="https://i.imgur.com/t5BTy6P.jpg" alt="Product Name Screen Shot" width="600" height="400">
+
+<!-- ![Sneaky Aeon](https://i.imgur.com/zNFfivd.jpg) -->
+<!-- ![Trevor in Charge](https://i.imgur.com/r7lZyIO.jpg) -->
+<!-- ![Naïve Nader](https://i.imgur.com/m0uVuTb.jpg) -->
+<!-- ![Una Plots](https://i.imgur.com/1rGr7gA.jpg) -->
+<!-- ![Guiling Gildemere](https://i.imgur.com/t5BTy6P.jpg) -->
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
