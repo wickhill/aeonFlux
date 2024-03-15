@@ -66,7 +66,7 @@
 
 <div align="center">
   <a href="https://github.com/wickhill/aeonFlux">
-    <img src="aeon-flux-02-git-600x450.jpg" alt="Æon Flux profile" width="400" height="400">
+    <img src="aeon-flux-02-git-600x450.jpg" alt="Æon Flux profile" width="600" height="450">
   </a>
 </div>
 
