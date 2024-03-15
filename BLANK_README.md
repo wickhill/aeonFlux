@@ -27,7 +27,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/wickhill/aeonFlux">
-    <img src="/images/aeon-flux-02.jpg" alt="Logo" width="80" height="80">
+    <img src="/assets/trevor-goodchild-icon-01-512x512.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">project_title</h3>
@@ -51,7 +51,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">About Aeon Flux: Most Wanted</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -76,9 +76,9 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://i.imgur.com/qhb76PN.jpg)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Aeon Flux, known for its surreal storylines and philosophical musings, unfolds in a dystopian future. In this world, the cryptic protagonist, Aeon, often confronts her adversary — and sometimes lover — the ambiguous Trevor Goodchild, who governs the utopian city-state of Bregna. This project is designed to establish a comprehensive Aeon Flux database and API, creating an opportunity for fans to discover and share detailed information about the series. `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
