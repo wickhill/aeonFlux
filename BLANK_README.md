@@ -23,7 +23,8 @@
     <img src="aeon-feather-icon.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Aeon Flux: Most Wanted</h3>
+<h4 align="center">An Aeon Flux Database / API!</h4>
 
   <p align="center">
     project_description
