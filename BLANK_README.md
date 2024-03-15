@@ -23,11 +23,11 @@
     <img src="aeon-feather-icon.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Aeon Flux: Most Wanted</h3>
-<h4 align="center">An Aeon Flux Database / API!</h4>
+<h3 align="center">Æon Flux: Most Wanted</h3>
+<h4 align="center">An Æon Flux Database!</h4>
 
   <p align="center">
-    project_description
+    "The Dream To Awaken Our API..."
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
@@ -74,7 +74,7 @@
   <img src="aeon-flux-02-git-pic.jpg" alt="Product Name Screen Shot" width="600" height="400">
 </a>
 
-Aeon Flux, known for its surreal storylines and philosophical musings, unfolds in a dystopian future. In this world, the cryptic protagonist, Aeon, often confronts her adversary — and sometimes lover — the ambiguous Trevor Goodchild, who governs the utopian city-state of Bregna. This project is designed to establish a comprehensive Aeon Flux database and API, creating an opportunity for fans to discover and share detailed information about the series. `https://github.com/wickhill`, `repo_name`, `twitter.com/wickstarter`, `https://www.linkedin.com/in/wickhill/`
+Æon Flux, known for its surreal storylines and philosophical musings, unfolds in a dystopian future. In this world, the cryptic protagonist, Æon, often confronts her adversary — and sometimes lover — the ambiguous Trevor Goodchild, who governs the utopian city-state of Bregna. This project is designed to establish a comprehensive Æon Flux database and API, creating an opportunity for fans to discover and share detailed information about the series. `https://github.com/wickhill`, `repo_name`, `twitter.com/wickstarter`, `https://www.linkedin.com/in/wickhill/`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -82,7 +82,7 @@ Aeon Flux, known for its surreal storylines and philosophical musings, unfolds i
 
 ## Getting Started
 
-Click on the project link, sign up - or sign in - and start adding Aeon Flux related photos! It could be anything - alternate profile photos, landscapes.... However, keep in mind that, currently, the app expects (and formats!) square photos.
+Click on the project link, sign up - or sign in - and start adding Æon Flux related photos! It could be anything - alternate profile photos, landscapes.... However, keep in mind that, currently, the app expects (and formats!) square photos.
 
 ### Prerequisites
 
