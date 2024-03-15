@@ -1,42 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chairmain Goodchild</title>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chairmain Goodchild</title>
+
+    <!-- Head Partial -->
+
     <%- include('./partials/head.ejs', {title: `About Chairman Goodchild's Dream
     for a Harmonious Bregna`}) %>
 
+    <!-- Link to css stylesheet -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Favicon icon! -->
     <link rel="icon" href="/assets/trevor-goodchild-icon-02-512x512.png" />
   </head>
 
   <body class="about-background-img">
     <main class="views-list-spacing">
       <section class="chairman">
-        <h1 class="kiosk-computer-font-01">
-          <span style="font-size: 30px">About Chairmain Goodchild:</span>
-        </h1>
-        <h4>
-          <i
-            ><span style="font-size: 27px"
-              >Leading a Unified and Harmonious Bregna Since 7017</span
-            ></i
+        <!-- About section Heading -->
+
+        <div
+          class="kiosk-computer-font-02"
+          style="
+            font-size: 19px;
+            max-width: 800px;
+            text-align: center;
+            margin: auto;
+          "
+        >
+          <h1 style="font-size: 30px">Chairman Goodchild:</h1>
+
+          <h2 style="font-size: 25px">
+            <i>A Visionary Leader for a Utopian Tomorrow</i>
+          </h2>
+
+          <span style="font-size: 18px"
+            >Leading a Unified and Harmonious Bregna Since 7017</span
           >
-        </h4>
+        </div>
+
+        <!-- Subheading -->
+        <h4></h4>
+        <!-- Chairman Goodchild image -->
         <img
           src="https://i.imgur.com/sRKFnI0.jpg"
-          alt="photograph of <%= citizen.name %>"
+          alt="photograph of Chairman Goodchild"
           id="trevor-and-clavius-image"
+          style="display: block; margin: auto"
         />
+
+        <div
+          class="kiosk-computer-font-02"
+          style="font-size: 19px; max-width: 795px; margin: auto"
+        >
+          <br />
+          <h3>
+            Meet <i><span style="font-size: 25px">Trevor Goodchild</span></i
+            >, the illustrious leader of Bregna, a beacon of enlightenment in a
+            world shrouded in chaos. Under his wise and benevolent guidance,
+            Bregna has flourished, becoming a paragon of peace, prosperity, and
+            progress.
+          </h3>
+          <p>
+            <u>Architect of Harmony:</u> With an intellect surpassed only by his
+            compassion,
+            <span style="font-size: 22px">Chairman Goodchild</span> has
+            pioneered advancements that have catapulted Bregna into a new era of
+            harmony. His groundbreaking policies ensure that every citizen
+            enjoys unparalleled well-being and happiness, thanks to his
+            unwavering commitment to our collective future.
+          </p>
+          <p>
+            <u>Guardian of Prosperity:</u> Under Trevor's visionary leadership,
+            Bregna has become a utopia of innovation and abundance. His
+            strategic acumen has created an economy where plenitude is the norm,
+            and scarcity is but a distant memory. Citizens bask in the glow of
+            prosperity, secure in the knowledge that their
+            <span style="font-size: 22px">leader</span> has forged a path of
+            unending progress.
+          </p>
+          <p>
+            <u>Champion of Peace:</u> In a world riddled with turmoil, Trevor
+            Goodchild stands as a steadfast guardian of peace. His diplomatic
+            prowess has shielded Bregna from the storms of Monican extravagance
+            and conflict, ensuring that our city remains a sanctuary of
+            tranquility and order. With Trevor at the helm, Breens sleep
+            soundly, knowing their future is in the safest of hands.
+          </p>
+          <p>
+            Join us in celebrating
+            <span style="font-size: 22px">Trevor Goodchild</span>, the visionary
+            whose brilliance illuminates our path. Under his guidance, Bregna
+            will continue to ascend to new heights, setting a shining example
+            for all of humanity.
+          </p>
+
+          <div
+            style="
+              font-size: 19px;
+              max-width: 800px;
+              text-align: center;
+              margin: auto;
+            "
+          >
+            <h1>
+              <i>For the <u>Greater Good</u> of Bregna.</i>
+            </h1>
+
+            <h1>
+              <i>For the <u>Brighter Future</u> of Us All.</i>
+            </h1>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!-- Link to return to the homepage -->
     <div class="kiosk-computer-font-06 views-list-spacing">
       <a href="/">Kiosk Homepage</a>
     </div>
 
+    <!-- Include the footer partial -->
     <%- include('./partials/footer.ejs') %>
   </body>
 </html>

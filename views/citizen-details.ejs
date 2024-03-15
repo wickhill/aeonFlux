@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <!-- Head Partial -->
     <%- include('./partials/head.ejs', {title: 'Citizen Report Accepted'}) %>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" href="../assets/trevor-goodchild-icon-01-512x512.png">
-</head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Favicon icon! -->
+    <link rel="icon" href="../assets/trevor-goodchild-icon-01-512x512.png" />
+  </head>
 
-<body class="completedReports-background-img">
+  <body class="completedReports-background-img">
+    <h1 class="views-list-spacing kiosk-computer-font-01">
+      New Report Accepted
+    </h1>
 
-    <nav>
-        <!-- REMEMBER TO ALTER THE TAGS BELOW WHEN YOU WANT TO USE THEM!!  -->
-        <%# include('./partials/nav.ejs') %>
-    </nav>
-
-    <h1 class="views-list-spacing kiosk-computer-font-01">New Report Accepted</h1>
-    
-    <p>
+    <!-- Check if citizen exists -->
     <% if(citizen){ %>
 
-        <div class="views-list-spacing kiosk-computer-font-06">
+    <div class="views-list-spacing kiosk-computer-font-06">
+      <!-- Display details about accepted citizen report -->
+      Your report on
+      <span class="kiosk-computer-font-01" style="font-size: 24px"
+        >&nbsp;<%= citizen.name.toUpperCase() %></span
+      >
+      related to the charge of
+      <span class="kiosk-computer-font-01" style="font-size: 24px"
+        ><%= citizen.charges.toUpperCase() %></span
+      >
+      has been successful.
 
-        Your report on <span class="kiosk-computer-font-01" style="font-size: 24px;">&nbsp;<%= citizen.name.toUpperCase() %></span> related to the charge of <span class="kiosk-computer-font-01" style="font-size: 24px;"><%= citizen.charges.toUpperCase() %></span> has been successful.
-      
-      <br><br>
-      
-      Thank you for doing your part: <span class="kiosk-computer-font-01" style="font-size: 24px;"> Citizen <%= currentUser._id.toUpperCase() %></span>.
+      <br /><br />
 
-      <br><br>
+      <!-- Acknowledge user's contribution -->
+      Thank you for doing your part:
+      <span class="kiosk-computer-font-01" style="font-size: 24px">
+        Citizen <%= currentUser._id.toUpperCase() %></span
+      >.
 
+      <br /><br />
+
+      <!-- Display reported citizen's profile image -->
       <span>
-        <img class="report-image" src=" <%= citizen.citizenProfileImage %> " alt="">
+        <img
+          class="report-image"
+          src=" <%= citizen.citizenProfileImage %> "
+          alt="Citizen profile image"
+        />
       </span>
-        
-      <br><br>
 
-        <% if(citizen.requiresInvestigation === true) { %>
-            <span>Investigation will commence in due time.</span>
-        <% } else { %>
-            <span>Further Investigation not necessary at this time.</span>
-            <% }%>
-            
-    <% }else { %>
-        
-        <h1>Citizen at that index does not exist</h1>
+      <br /><br />
 
-    <% } %>
-</p>
-</div>
+      <!-- Based on user's report, display message (conditional) on whether citizen requires further investigation -->
+      <% if(citizen.requiresInvestigation === true) { %>
+      <span>Investigation will commence in due time.</span>
+      <% } else { %>
+      <span>Further Investigation not necessary at this time.</span>
+      <% } %> <% } else { %>
 
-<a href="/reports/<%= citizen._id %>/edit" class="views-list-spacing kiosk-computer-font-08" style="font-size: 15px;">[Are you really done? Click here to supplement information]</a>
+      <!-- Message displayed if no citizen data found -->
+      <h1>Citizen at that index does not exist</h1>
 
-<br>
-<br>
+      <% } %>
+    </div>
 
-<a href=" /citizens" class="views-list-spacing kiosk-computer-font-05">Kiosk Home</a>
+    <!-- Link to edit existing report if user wants to add additional information -->
+    <a
+      href="/reports/<%= citizen._id %>/edit"
+      class="views-list-spacing kiosk-computer-font-08"
+      style="font-size: 15px"
+      >[Are you really done? Click here to supplement information]</a
+    >
 
+    <br /><br />
+
+    <!-- Link to return to main kiosk page -->
+    <a href=" /citizens" class="views-list-spacing kiosk-computer-font-05"
+      >Kiosk Home</a
+    >
+
+    <!-- Footer Partial -->
     <%- include('./partials/footer.ejs') %>
-
-</body>
+  </body>
 </html>

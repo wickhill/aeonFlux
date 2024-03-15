@@ -57,7 +57,7 @@
 #trevor-and-clavius-image {
   width: 800px !important;
   height: 600px !important;
-  border: 5px solid rgb(231, 193, 96) !important;
+  border: 5px solid rgb(231, 193, 96);
 }
 
 .dossier-list {
@@ -185,7 +185,7 @@
   background-image: url("https://i.imgur.com/EyC7jzT.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.8;
+  opacity: 0.6;
   z-index: -1;
 }
 

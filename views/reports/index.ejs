@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Reports by Citizen</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" href="../assets/aeon-flux-icon-02-512x512.png">
-</head>
-<body class="existingReports-background-img">
-    <h1 class="kiosk-computer-font-06 views-list-spacing">Personal Reports by Citizen <%= currentUser._id %></h1>
-    <h4 class="kiosk-computer-font-05 views-list-spacing"><a href="/">Kiosk Homepage</a></h4>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" href="../assets/aeon-flux-icon-02-512x512.png" />
+  </head>
+  <body class="existingReports-background-img">
+    <!-- Header displays current user's ID -->
+    <h1 class="kiosk-computer-font-06 views-list-spacing">
+      Personal Reports by Citizen <%= currentUser._id %>
+    </h1>
+    <!-- Link to homepage -->
+    <h4 class="kiosk-computer-font-05 views-list-spacing">
+      <a href="/">Kiosk Homepage</a>
+    </h4>
+    <!-- List of available citizen reports -->
     <ul class="dossier-list">
-        <% citizens.forEach(function(citizen) { %>
-            <li>
-                <img src="<%= citizen.citizenProfileImage %>" alt="Profile image of <%= citizen.name %>" class="dossier-image" onerror="this.onerror=null; this.src='/path/to/default/image.jpg';">
-                <p class="kiosk-computer-font-04">name: <%= citizen.name %></p>
-                <p class="kiosk-computer-font-04">nationality: <%= citizen.nationality %></p>
-                <p class="kiosk-computer-font-04">skills: <%= citizen.skills%></p>
-                <p class="kiosk-computer-font-04">charges: <%= citizen.charges%></p>
-                <p class="kiosk-computer-font-04">confirmed spy: <%= citizen.is_spy %></p>
-                <p class="kiosk-computer-font-04">requires investigation: <%= citizen.requiresInvestigation %></p>
-                <form action="/reports/<%= citizen._id %>/edit" method="GET">
-                    <input type="submit" value="Edit Citizen Report" />
-                </form>
-                
-            </li>
-        <% }) %>
+      <% citizens.forEach(function(citizen) { %>
+      <li>
+        <!-- Display citizen's profile image with 'onerror' fallback -->
+        <img
+          src="<%= citizen.citizenProfileImage %>"
+          alt="Profile image of <%= citizen.name %>"
+          class="dossier-image"
+          onerror="this.onerror=null; this.src='/path/to/default/image.jpg';"
+        />
+        <!-- Display citizen details -->
+        <p class="kiosk-computer-font-04">name: <%= citizen.name %></p>
+        <p class="kiosk-computer-font-04">
+          nationality: <%= citizen.nationality %>
+        </p>
+        <p class="kiosk-computer-font-04">skills: <%= citizen.skills %></p>
+        <p class="kiosk-computer-font-04">charges: <%= citizen.charges %></p>
+        <p class="kiosk-computer-font-04">
+          confirmed spy: <%= citizen.is_spy %>
+        </p>
+        <p class="kiosk-computer-font-04">
+          requires investigation: <%= citizen.requiresInvestigation %>
+        </p>
+        <!-- Edit button option to edit citizen's report -->
+        <form action="/reports/<%= citizen._id %>/edit" method="GET">
+          <input type="submit" value="Edit Citizen Report" />
+        </form>
+      </li>
+      <% }) %>
     </ul>
-    <h4 class="kiosk-computer-font-05 views-list-spacing"><a href="/">Kiosk Homepage</a></h4>
+    <!-- Link the kiosk homepage -->
+    <h4 class="kiosk-computer-font-05 views-list-spacing">
+      <a href="/">Kiosk Homepage</a>
+    </h4>
+    <!-- Footer Partial -->
     <%- include('../partials/footer.ejs') %>
-</body>
+  </body>
 </html>

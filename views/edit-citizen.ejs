@@ -1,88 +1,94 @@
 <head>
+    <!-- Head Partial, set title, and then citizen's name dynamically -->
     <%- include('./partials/head.ejs', {title: `Edit ${citizen.name} | Citizen Finder`}) %>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
     
+    <!-- Nav Partial -->
     <%- include('./partials/nav.ejs') %>
 
+    <!-- Begin Sectionto edit citizen report -->
     <section class="informant">
         <h2>Edit Citizen Report</h2>
     </section>
 
+    <!-- Edit citizen report Form -->
     <form method="POST" action="/citizens/<%= citizen._id %>?_method=PUT">
-
         <span>
-    
-        <img class="report-image" src=" <%= citizen.citizenProfileImage %> " alt="">
-        
+            <!-- Display current citizen's profile image -->
+            <img class="report-image" src="<%= citizen.citizenProfileImage %>" alt="Citizen profile image">
         </span>
     
         <br>
     
-            <!-- Name input -->
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" value="<%= citizen.name %>" required>
-            
-            <br>
-    
-            <!-- Nationality input -->
-            <label for="nationality">Nationality:</label>
-            <input type="text" name="nationality" id="nationality" value="<%= citizen.nationality %>" required>
-            
-            <br>
-    
-            <!-- Confirmed Spy input -->
-            <label for="is_spy">Confirmed Spy?:</label> 
-            <select name="is_spy" id="is_spy">
-            <option value="true">true</option>
-            <option value="false">false</option>
-            </select>
-    
-            <!-- Hair Color input -->
-            <label for="hairColor">Hair Color:</label> 
-            <input type="text" name="hairColor" id="hairColor" value="<%= citizen.hairColor %>"/>
-    
-            <!-- Eye Color input -->
-            <label for="eyeColor">Eye Color:</label> 
-            <input type="text" name="eyeColor" id="eyeColor" value="<%= citizen.eyeColor %>"/>
-    
-            <br>
-    
-            <!-- Charges Against input -->
-            <label for="charges">Charges:</label> 
-            <input type="text" name="charges" id="charges" value="<%= citizen.charges %>"/>
-    
-            <!-- Testimonial For input -->
-            <label for="testimonial">Testimonial:</label> 
-            <input type="text" name="testimonial" id="testimonial" value="<%= citizen.testimonial %>"/>
-    
-            <br>
-    
-            <label for="citizenProfileImage">Evidence Image URL:</label>
-            <!-- citizenProfileImage input -->
-            <input type="url" name="citizenProfileImage" id="citizenProfileImage" placeholder="Enter New image URL" />
+        <!-- Input to edit citizen's name while dynamically populating citizen's current name info -->
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" value="<%= citizen.name %>" required>
         
-            <br>
+        <br>
     
-            <!-- Requires Investigation input -->
-            <label for="requiresInvestigation">Requires Investigation</label>
-             <input type="checkbox" name="requiresInvestigation" id="requiresInvestigation" <%= citizen.requiresInvestigation ? 'checked' : '' %> >
+        <!-- Input to edit citizen's nationality while dynamically populating citizen's current nationality info -->
+        <label for="nationality">Nationality:</label>
+        <input type="text" name="nationality" id="nationality" value="<%= citizen.nationality %>" required>
+        
+        <br>
     
-             <br>
+        <!-- Dropdown to select if citizen is a confirmed spy -->
+        <label for="is_spy">Confirmed Spy?:</label> 
+        <select name="is_spy" id="is_spy">
+            <option value="true" <%= citizen.is_spy ? 'selected' : '' %>>true</option>
+            <option value="false" <%= !citizen.is_spy ? 'selected' : '' %>>false</option>
+        </select>
     
-              <br>
-              <br>
-           
-            <input type="submit" value="Edit Citizen">
-    
-        </form>
+        <!-- Input fields for editing citizen's hair color, eye color, and other details -->
+        <!-- Current values also populated -->
 
+          <!-- Hair Color input -->
+          <label for="hairColor">Hair Color:</label> 
+          <input type="text" name="hairColor" id="hairColor" value="<%= citizen.hairColor %>"/>
+  
+          <!-- Eye Color input -->
+          <label for="eyeColor">Eye Color:</label> 
+          <input type="text" name="eyeColor" id="eyeColor" value="<%= citizen.eyeColor %>"/>
+  
+          <br>
+  
+          <!-- Charges Against input -->
+          <label for="charges">Charges:</label> 
+          <input type="text" name="charges" id="charges" value="<%= citizen.charges %>"/>
+  
+          <!-- Testimonial For input -->
+          <label for="testimonial">Testimonial:</label> 
+          <input type="text" name="testimonial" id="testimonial" value="<%= citizen.testimonial %>"/>
+  
+          <br>
+
+          <!-- New Image input -->
+          <label for="citizenProfileImage">Evidence Image URL:</label>
+          <!-- citizenProfileImage input -->
+          <input type="url" name="citizenProfileImage" id="citizenProfileImage" placeholder="Enter New image URL" />
+      
+          <br>
+
+        <!-- Checkbox to indicate if citizen requires further investigation -->
+        <label for="requiresInvestigation">Requires Investigation</label>
+        <input type="checkbox" name="requiresInvestigation" id="requiresInvestigation" <%= citizen.requiresInvestigation ? 'checked' : '' %> >
+    
+        <br><br><br>
+       
+        <!-- Submit button to save edited details -->
+        <input type="submit" value="Edit Citizen">
+    
+    </form>
+
+    <!-- Link to return to citizen's details page without making changes -->
     <div>
         <a href="/citizens/<%= citizen._id %>">Return to Kiosk without Editing Citizen Information</a> 
     </div>
 
+    <!-- Footer Partial -->
     <%- include('./partials/footer.ejs') %>
 
 </body>

@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Head Partial, set title, and then citizen's name dynamically -->
+
     <%- include('../partials/head.ejs', {title: `Edit
     ${citizen.name.toUpperCase()} | Citizen Report`}) %>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="icon" href="/assets/trevor-goodchild-icon-01-512x512.png" />
   </head>
 
+  <!-- Styling -->
   <body class="editReports-background-img">
     <div class="views-list-spacing">
       <h1 class="kiosk-computer-font-02">Edit Existing Citizen Report:</h1>
 
       <br />
 
-      <!-- Submission Form -->
+      <!-- Submission Form using 'method-override' to treat POST request as PUT -->
       <form method="POST" action="/citizens/<%= citizen._id %>?_method=PUT">
         <!-- Name input -->
         <label for="name" class="kiosk-computer-font-08">Name:</label>
@@ -103,6 +106,8 @@
           placeholder="New image URL?"
         />
 
+        <br />
+
         <!-- Requires Investigation input -->
         <label for="requiresInvestigation" class="kiosk-computer-font-08"
           >Requires Investigation?</label
@@ -124,8 +129,13 @@
         <br />
         <br />
 
+        <!-- Submit button to save edited details -->
+
         <input type="submit" value="Edit Citizen Report" />
       </form>
+
+      <!-- Delete button to delete citizen report and provide alert warning to confirm that action is intended -->
+
       <form
         action="/citizens/<%= citizen._id %>?_method=DELETE"
         method="POST"
@@ -135,10 +145,17 @@
       </form>
 
       <br /><br />
+
+      <!-- Link telling user it'll return kiosk, when in fact it routes citizen to reported citizen's report... -->
+      <!-- This is kind of a joke, i.e. like when Amazon asks if you REALLY want to empty your cart or delete item -->
+      <!-- This is to provide user with another opportunity to provide additional details on citizen(s) -->
+
       <a href="/citizens/<%= citizen._id %>"
         >Return to Kiosk without Editing Citizen Information</a
       >
     </div>
+
+    <!-- Footer Partial -->
 
     <%- include('../partials/footer.ejs') %>
   </body>

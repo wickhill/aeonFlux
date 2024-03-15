@@ -97,11 +97,11 @@ No pre-reqs!
 
 ## Additional Stills
 
-  <img src="https://i.imgur.com/zNFfivd.jpg" alt="Product Name Screen Shot" width="600" height="600">
-  <img src="https://i.imgur.com/r7lZyIO.jpg" alt="Product Name Screen Shot" width="600" height="600">
-  <img src="https://i.imgur.com/m0uVuTb.jpg" alt="Product Name Screen Shot" width="600" height="600">
-  <img src="https://i.imgur.com/1rGr7gA.jpg" alt="Product Name Screen Shot" width="600" height="600">
-  <img src="https://i.imgur.com/t5BTy6P.jpg" alt="Product Name Screen Shot" width="600" height="600">
+  <img src="https://i.imgur.com/xnQgojA.jpg" alt="Product Name Screen Shot" width="800" height="600">
+  <img src="https://i.imgur.com/LawnFxG.jpg" alt="Product Name Screen Shot" width="800" height="600">
+  <img src="https://i.imgur.com/zIIp0Vp.jpg" alt="Product Name Screen Shot" width="800" height="600">
+  <img src="https://i.imgur.com/ST4N8Ac.jpg" alt="Product Name Screen Shot" width="800" height="600">
+  <img src="https://i.imgur.com/1rGr7gA.jpg" alt="Product Name Screen Shot" width="400" height="400">
 
 <!-- ![Sneaky Aeon](https://i.imgur.com/zNFfivd.jpg) -->
 <!-- ![Trevor in Charge](https://i.imgur.com/r7lZyIO.jpg) -->

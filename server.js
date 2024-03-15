@@ -78,6 +78,8 @@ app.use(
 app.use(methodOverride("_method"));
 app.use(morgan("tiny"));
 
+// Setting up ROOT route, catches requests made to HOME URL, redirects to '/citizens'
+
 app.get("/", function (req, res) {
   res.redirect("/citizens");
 });
@@ -112,12 +114,13 @@ app.use("/sessions", sessionCtrl);
 app.use("/dossiers", dossierCtrl);
 app.use("/reports", reportsController);
 
-/* 'catch-all' route, i.e. report to supervisor lol
+/* 'catch-all' route, i.e. report to supervisor :)
 --------------------------------------------------------------- */
 app.get("*", function (req, res) {
   res.render("404");
 });
 
+// Server initialization
 app.listen(PORT, () => {
   console.log(`The dream to awaken our world in the year`, PORT);
 });
