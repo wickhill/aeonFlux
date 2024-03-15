@@ -19,11 +19,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <div align="center">
   <a href="https://github.com/wickhill/aeonFlux">
     <img src="aeon-feather-icon.png" alt="Logo" width="80" height="80">
   </a>
-  </div>
 
 <h3 align="center">project_title</h3>
 
@@ -75,7 +73,7 @@
   <img src="aeon-flux-02-git-pic.jpg" alt="Product Name Screen Shot" width="600" height="400">
 </a>
 
-Aeon Flux, known for its surreal storylines and philosophical musings, unfolds in a dystopian future. In this world, the cryptic protagonist, Aeon, often confronts her adversary — and sometimes lover — the ambiguous Trevor Goodchild, who governs the utopian city-state of Bregna. This project is designed to establish a comprehensive Aeon Flux database and API, creating an opportunity for fans to discover and share detailed information about the series. `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Aeon Flux, known for its surreal storylines and philosophical musings, unfolds in a dystopian future. In this world, the cryptic protagonist, Aeon, often confronts her adversary — and sometimes lover — the ambiguous Trevor Goodchild, who governs the utopian city-state of Bregna. This project is designed to establish a comprehensive Aeon Flux database and API, creating an opportunity for fans to discover and share detailed information about the series. `https://github.com/wickhill`, `repo_name`, `twitter.com/wickstarter`, `https://www.linkedin.com/in/wickhill/`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -133,19 +131,11 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- CONTACT -->
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/wickstarter) - wickhill@gmail.com
+Your Name - [@wickstarter](https://twitter.com/wickstarter) - wickhill@gmail.com
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/wickhill/aeonFlux)
 
@@ -153,16 +143,13 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
+<!-- LICENSE -->
 
-- []()
-- []()
-- []()
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
