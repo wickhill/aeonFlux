@@ -122,13 +122,26 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- References -->
+
+## References
+
+[Aeon Flux Wiki](https://aeonflux.fandom.com/wiki/Series)
+[ChatGPT](https://chat.openai.com/)
+[w3schools](https://www.w3schools.com/)
+[Stack Overflow](https://stackoverflow.com/)
+[npm](https://www.npmjs.com/)
+[Favicon Generator](https://favicon.io/favicon-converter/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- CONTACT -->
 
 ## Contact
 
 Twitter / X - [@wickstarter](https://twitter.com/wickstarter) - wickhill@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/wickhill/aeonFlux)
+Project Link: [https://git.heroku.com/aeonflux.git](https://aeonflux-28ce542e8253.herokuapp.com/citizens)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
