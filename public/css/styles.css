@@ -133,6 +133,7 @@
   margin-top: 22px;
 }
 
+/* pseudo-element ::before is used to insert content before the content of the selected element */
 .index-background-img::before {
   content: "";
   position: fixed;
