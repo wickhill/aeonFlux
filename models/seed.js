@@ -171,6 +171,42 @@ const citizens = [
     requiresInvestigation: true,
     citizenProfileImage: "https://i.imgur.com/MpYFpcU.jpg",
   },
+  {
+    name: "onan",
+    nationality: "breen",
+    is_spy: false,
+    skills: "acrobatics",
+    charges: "crossing border into monica",
+    requiresInvestigation: true,
+    citizenProfileImage: "https://i.imgur.com/JdartEu.jpg",
+  },
+  {
+    name: "deputy of standing committee, border echelon",
+    nationality: "monican (originally)",
+    is_spy: false,
+    skills: "foresight, organization",
+    charges: "none",
+    requiresInvestigation: false,
+    citizenProfileImage: "https://i.imgur.com/3lutrcw.jpg",
+  },
+  {
+    name: "sibyl",
+    nationality: "breen",
+    is_spy: false,
+    skills: "discretion",
+    charges: "attempted border crossing (failed)",
+    requiresInvestigation: false,
+    citizenProfileImage: "https://i.imgur.com/n2M1Soi.jpg",
+  },
+  {
+    name: "border observation agent #78-O-53W",
+    nationality: "breen",
+    is_spy: false,
+    skills: "observation",
+    charges: "tampering with confidential citizen files",
+    requiresInvestigation: true,
+    citizenProfileImage: "https://i.imgur.com/x84dsjN.jpg",
+  },
 ];
 
 module.exports = citizens;

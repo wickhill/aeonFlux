@@ -9,7 +9,7 @@ const citizenSchema = new mongoose.Schema({
   skills: [String],
   missions_completed: { type: String, default: "0" },
   charges: { type: String, default: "disloyalty" },
-  testimonial: { type: String, default: "unverified-testimonial" },
+  testimonial: { type: String, default: "[redacted]" },
   requiresInvestigation: { type: Boolean },
   citizenProfileImage: { type: String, default: "defaultImgPath.jpg" },
 
