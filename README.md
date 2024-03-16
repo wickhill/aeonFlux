@@ -126,7 +126,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Your Name - [@wickstarter](https://twitter.com/wickstarter) - wickhill@gmail.com
+Twitter / X - [@wickstarter](https://twitter.com/wickstarter) - wickhill@gmail.com
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/wickhill/aeonFlux)
 
