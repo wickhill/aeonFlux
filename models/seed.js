@@ -207,6 +207,42 @@ const citizens = [
     requiresInvestigation: true,
     citizenProfileImage: "https://i.imgur.com/x84dsjN.jpg",
   },
+  {
+    name: "khrev",
+    nationality: "breen",
+    is_spy: false,
+    skills: "navigation, science",
+    charges: "none",
+    requiresInvestigation: false,
+    citizenProfileImage: "https://i.imgur.com/00Payff.jpg",
+  },
+  {
+    name: "jasco (lab pictured, whereabouts unknown)",
+    nationality: "coloden",
+    is_spy: false,
+    skills: "chemistry, research",
+    charges: "falsifying research",
+    requiresInvestigation: true,
+    citizenProfileImage: "https://i.imgur.com/u0Sbcq0.jpg",
+  },
+  {
+    name: "coloden omega point child",
+    nationality: "coloden",
+    is_spy: false,
+    skills: "[redacted]",
+    charges: "[redacted]",
+    requiresInvestigation: true,
+    citizenProfileImage: "https://i.imgur.com/9M1fiFN.jpg",
+  },
+  {
+    name: "maris",
+    nationality: "breen",
+    is_spy: false,
+    skills: "navigation",
+    charges: "none",
+    requiresInvestigation: false,
+    citizenProfileImage: "https://i.imgur.com/p4PELti.jpg",
+  },
 ];
 
 module.exports = citizens;
