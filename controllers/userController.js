@@ -5,13 +5,13 @@ const bcrypt = require("bcrypt");
 
 // Route to serve the user registration page
 router.get("/new", (req, res) => {
-  // Render the registration page (newKioskUser.ejs within users directory) and pass the current user, if any
+  // Render the registration page (newKioskUser.ejs w/in users directory) and pass the current user, if any
   res.render("users/newKioskUser", { currentUser: req.session.currentUser });
 });
 
 // Registration route logic
 router.post("/", async (req, res) => {
-  // Convert username to lowercase, i.e. unique to avoid case-sensitive issues!
+  // Convert username to lowercase, i.e. avoids case-sensitive issues and makes usernames unique
   req.body.username = req.body.username.toLowerCase();
 
   try {

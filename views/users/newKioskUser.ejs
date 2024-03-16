@@ -15,7 +15,8 @@
         <!-- Form to login / sign in existing app user -->
         <form action="/users" method="POST">
           Username: <input required type="text" name="username" /><br />
-          Password: <input required type="text" name="password" /><br />
+          <!-- Change back to type="text" if you need to view password for debugging -->
+          Password: <input required type="password" name="password" /><br />
           <input type="submit" name="" value="Create New User" />
         </form>
       </header>
