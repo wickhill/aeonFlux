@@ -65,7 +65,7 @@
 ## About The Project
 
 <div align="center">
-  <a href="https://github.com/wickhill/aeonFlux">
+  <a href="https://aeonflux-28ce542e8253.herokuapp.com/sessions/new">
     <img src="https://i.imgur.com/xnQgojA.jpg" alt="Citizen Dossiers Page" width="800" height="600">
   </a>
 </div>
